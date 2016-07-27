@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Loan's profile</title>
 
     <!-- Google fonts -->
@@ -14,8 +14,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a class="button" title="A button" href="#summary">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a class="button" title="Another button" href="#books">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="button" title="So many clickable!" href="#footer">
+            <i class="fa fa-life-ring"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-      <header class="card text-center">
+      <header class="card text-center" id="summary">
         <img id="identity" src="data/id.jpg" alt="Me in a picture" title="Me in a picture, unbeliveable!" width="200px">
         <h1>
           Loan Robert
@@ -30,16 +49,16 @@
 
       <section class="card">
         <div class="text-center">
-          <a class="button align" href="https://fr.linkedin.com/in/loanrobert" title="It's a button, and when you click it moves, WOAW!" target="blank">
+          <a class="clickable button align" href="https://fr.linkedin.com/in/loanrobert" title="It's a button, and when you click it moves, WOAW!" target="blank">
             <i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin
           </a>
-          <a class="button align" href="https://github.com/LoanR" title="This one too, OMG!" target="blank">
+          <a class="clickable button align" href="https://github.com/LoanR" title="This one too, OMG!" target="blank">
             <i class="fa fa-github-square" aria-hidden="true"></i> Github
           </a>
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="books">
         <h2 class="text-center">
           The books I am reading
         </h2>
@@ -61,10 +80,10 @@
                 <div class="text-center">
                   <ul class="list-inline">
                     <li>
-                      <a class="align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                      <a class="button align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                      <a class="align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
+                      <a class="button align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -85,10 +104,10 @@
                 <div class="text-center">
                   <ul class="list-inline">
                     <li>
-                      <a class="align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                      <a class="button align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                      <a class="align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
+                      <a class="button align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -98,7 +117,7 @@
         </table>
       </section>
 
-      <footer class="card text-center">
+      <footer class="card text-center" id="footer">
         <h2>
           About this page
         </h2>
