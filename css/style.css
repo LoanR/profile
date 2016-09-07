@@ -20,11 +20,19 @@ header > p {
   box-shadow: 0 6px 10px rgb(240,240,240);
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
 }
 
 .menu > a {
@@ -36,17 +44,38 @@ ul {
   align-items: center;
 }
 
-.menu {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-around;
+.separator {
+  height: 100%;
+  border-left: 1px solid rgba(170, 170, 170, 0.1);
+
+}
+
+.navbar-link {
+  opacity: 0.5;
+  transition: box-shadow 0.4s ease, opacity 0.4s ease;
+}
+
+.navbar-link:hover {
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*border: 1px solid rgba(120, 120, 120, 0.1);*/
+
+}
+
+.navbar-link:active {
+  /*background-color: red;*/
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2);
 }
 
 .card {
   background-color: #ffffff;
   border-radius: 2px;
   margin: 15px;
-  padding: 30px 80px ;
+  padding: 30px 80px;
+}
+
+.group-s-content {
+  width: 100%;
 }
 
 .card:first-child {
@@ -55,6 +84,15 @@ ul {
 
 #identity {
   border-radius: 2px;
+}
+
+.card > h2:first-child {
+  position: relative;
+}
+
+h2 > span {
+  position: absolute;
+  top: -109px;
 }
 
 h1 {
@@ -74,10 +112,19 @@ h2 {
 }
 
 h3 {
-  color: #989898;
+  color: #b5b5b5;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 1.2em;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a > h3:hover {
+  color: #717171;
 }
 
 .xp-group {
@@ -93,6 +140,10 @@ h3 {
   width: 30px;
 }
 
+.logo-navbar {
+  height: 30px;
+}
+
 .logo-circle {
   border-radius: 50%;
 
@@ -101,6 +152,76 @@ h3 {
 .logo-small {
   width: 17px;
 }
+
+.interests-content {
+  margin-top: 20px;
+}
+
+.column-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+.socials {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mini-hr {
+  width: 40%;
+  margin: 20px 0 10px 0;
+}
+
+.rounded-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /*background-color: red;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5b5b5;
+  transition: color 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.rounded-button:hover {
+  color: #717171;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.rounded-button:active {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+  color: #717171;
+}
+
+.bigger-size {
+  font-size: 25px;
+}
+
+a:focus {
+  outline: 0;
+  color: #b5b5b5;
+  text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+
+  #navbar {
+    margin: 0;
+  }
+
+  .card {
+    margin: 15px 0;
+    padding: 30px 15px;
+  }
+}
+
 
 /*#sidebar {
   position: fixed;
@@ -147,8 +268,8 @@ h3 {
 .button:active {
   box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
   position: relative;
-  left: 2px;
   top: 2px;
+  left: 2px;
 }
 
 .authors {

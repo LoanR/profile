@@ -17,27 +17,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- js -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+
   </head>
   <body>
-    <!-- <div id="sidebar">
-      <ul>
-        <li>
-          <a class="button" title="A button" href="#summary">
-            <i class="fa fa-info-circle"></i>
-          </a>
-        </li>
-        <li>
-          <a class="button" title="Another button" href="#books">
-            <i class="fa fa-book" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a class="button" title="So many clickable!" href="#footer">
-            <i class="fa fa-life-ring"></i>
-          </a>
-        </li>
-      </ul>
-    </div> -->
     <div class="container">
       <div class="row">
         <div class="navbar-fixed-top">
@@ -46,28 +31,30 @@
               <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                 <div id="navbar">
                   <ul class="menu">
-                    <a href="#education">
+                    <a href="#education" class="smoothscroll navbar-link" title="Education">
                       <li>
-                        Education
+                        <img src="img/education.svg" alt="" class="logo-navbar">
                       </li>
                     </a>
-                    <a href="#">
+                    <li class="separator"></li>
+                    <a href="#work-exp" class="smoothscroll navbar-link" title="Work experience">
                       <li>
-                        Work experience
+                        <img src="img/exp.svg" alt="" class="logo-navbar">
                       </li>
                     </a>
-                    <a href="#">
+                    <li class="separator"></li>
+                    <a href="#interests" class="smoothscroll navbar-link" title="Interests">
                       <li>
-                        ...
+                        <img src="img/interests.svg" alt="" class="logo-navbar">
                       </li>
                     </a>
-                    <a href="#">
+                    <li class="separator"></li>
+                    <a href="mailto:loan.rbrt@gmail.com" class="navbar-link" title="Send me a mail!">
                       <li>
-                        mail-to
+                        <img src="img/mail.svg" alt="" class="logo-navbar">
                       </li>
                     </a>
                   </ul>
-
                 </div>
               </div>
             </div>
@@ -80,124 +67,264 @@
               Loan Robert
             </h1>
             <h2>
-              Web developer
+              Junior web developer
             </h2>
             <p>
               After several years in environmental science and science communication studies, I am now learning to be a web developer with Ruby (on Rails) for the back-end and HTML, CSS, JS for the front.
             </p>
+            <div class="column-box">
+              <hr class="mini-hr">
+              <div class="socials">
+                <a href="https://github.com/LoanR" class="rounded-button bigger-size" target="blank" title="Github">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://fr.linkedin.com/in/loanrobert" class="rounded-button bigger-size" target="blank" title="Linkedin">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/rbrtloan" class="rounded-button bigger-size" target="blank" title="Twitter">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://soundcloud.com/lowone" class="rounded-button bigger-size" target="blank" title="Soundcloud">
+                  <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
           </header>
-          <article class="card" id="education">
+          <article class="card">
             <h2 class="text-center">
               Education
+              <span id="education"></span>
             </h2>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="https://www.lewagon.com/" target="blank"><img src="img/wagon_logo.png" class="logo logo-circle" alt="Logo Le Wagon" title="Le Wagon"></a>
+                <a href="https://www.lewagon.com/" target="blank">
+                  <img src="img/wagon_logo.png" class="logo logo-circle" alt="Logo Le Wagon" title="Le Wagon">
+                </a>
               </div>
               <div class="group-s-content">
-                <a href="https://www.lewagon.com/" target="blank" title="Le Wagon"><h3>Le Wagon - FullStack developer </h3></a><span class="dates"></span>
-
-                <p>9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails.</p>
+                <a href="https://www.lewagon.com/" target="blank" title="Le Wagon">
+                  <h3>
+                    Le Wagon - FullStack developer&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails.
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://www.masterset.fr/mediation" target="blank"><img src="img/amu_logo.png" class="logo" alt="Logo Aix-Marseille Universités" title="Aix-Marseille Universités"></a>
+                <a href="http://www.masterset.fr/mediation" target="blank">
+                  <img src="img/amu_logo.png" class="logo" alt="Logo Aix-Marseille Universités" title="Aix-Marseille Universités">
+                </a>
               </div>
               <div class="group-s-content">
-                <a href="http://www.masterset.fr/mediation" target="blank" title="Aix-Marseille Universités"><h3>Master degree - 'Médiation en environnement' </h3></a><span class="dates"></span>
-                <p>Environmental sciences, communication, educational sciences, sociology, scientific journalism. Science meetings designed with the university and internship with '<a href="http://www.lespetitsdebrouillards.org/" target="blank" title="Les Petits Débrouillards"><img src="img/petitsdebrouillards_logo.png" class="logo-small" alt="Logo Les Petits Débrouillards">&nbspLes Petits Débrouillards</a>' and '<a href="https://www.facebook.com/robinsdesvilles.lyon/" target="blank" title="Les Robins des Villes"><img src="img/robinsdesvilles_logo.png" class="logo-small" alt="Logo Les Robins des Villes">&nbspLes Robins des Villes</a>'.</p>
+                <a href="http://www.masterset.fr/mediation" target="blank" title="Aix-Marseille Universités">
+                  <h3>
+                    Master degree - 'Médiation en environnement'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Environmental sciences, communication, educational sciences, sociology, scientific journalism. Science meetings designed with the university and internship with '
+                    <a href="http://www.lespetitsdebrouillards.org/" target="blank" title="Les Petits Débrouillards">
+                      <img src="img/petitsdebrouillards_logo.png" class="logo-small" alt="Logo Les Petits Débrouillards">
+                      &nbspLes Petits Débrouillards
+                    </a>
+                  ' and '
+                    <a href="https://www.facebook.com/robinsdesvilles.lyon/" target="blank" title="Les Robins des Villes">
+                      <img src="img/robinsdesvilles_logo.png" class="logo-small" alt="Logo Les Robins des Villes">
+                      &nbspLes Robins des Villes
+                    </a>
+                  '.
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://sciences.univ-amu.fr/" target="blank"><img src="img/samu_logo.png" class="logo" alt="Logo Aix-Marseille Universités" title="Aix-Marseille Universités"></a>
+                <a href="http://sciences.univ-amu.fr/" target="blank">
+                  <img src="img/samu_logo.png" class="logo" alt="Logo Aix-Marseille Universités" title="Aix-Marseille Universités">
+                </a>
               </div>
               <div class="group-s-content">
-                <a href="http://sciences.univ-amu.fr/" target="blank" title="Aix-Marseille Universités"><h3>Bachelor degree - 'Biologie évolution environnement' </h3></a><span class="dates"></span>
-                <p>Ecology, geology, biodiversity, biology, chemistry, evolution and other environmental sciences.</p>
+                <a href="http://sciences.univ-amu.fr/" target="blank" title="Aix-Marseille Universités">
+                  <h3>
+                    Bachelor degree - 'Biologie évolution environnement'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Ecology, geology, biodiversity, biology, chemistry, evolution and other environmental sciences.
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://www.univ-orleans.fr/" target="blank"><img src="img/uorleans_logo.png" class="logo" alt="Logo Université d'Orléans" title="Université d'Orléans"></a>
+                <a href="http://www.univ-orleans.fr/" target="blank">
+                  <img src="img/uorleans_logo.png" class="logo" alt="Logo Université d'Orléans" title="Université d'Orléans">
+                </a>
               </div>
               <div class="group-s-content">
-                <a href="http://www.univ-orleans.fr/" target="blank" title="Université d'Orléans"><h3>Studies 'Astronomie et astrophysique' </h3></a><span class="dates"></span>
-                <p>Basic course in astronomy and astrophysics.</p>
+                <a href="http://www.univ-orleans.fr/" target="blank" title="Université d'Orléans">
+                  <h3>
+                    Studies 'Astronomie et astrophysique'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Basic course in astronomy and astrophysics.
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://www.iutlaroche.univ-nantes.fr/" target="blank"><img src="img/unantes_logo.png" class="logo" alt="Logo Université de Nantes" title="IUT de La Roche sur Yon"></a>
+                <a href="http://www.iutlaroche.univ-nantes.fr/" target="blank">
+                  <img src="img/unantes_logo.png" class="logo" alt="Logo Université de Nantes" title="IUT de La Roche sur Yon">
+                </a>
               </div>
               <div class="group-s-content">
-                <h3>Two-year university degree 'Génie biologique, environnement' <span class="dates"></span>
-                </h3>
-                <p>Environmental sciences, laboratory sciences.</p>
+                <a href="http://www.iutlaroche.univ-nantes.fr/" target="blank" title="IUT de La Roche sur Yon">
+                  <h3>
+                    Two-year university degree 'Génie biologique, environnement'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Environmental sciences, laboratory sciences.
+                </p>
               </div>
+            </div>
+            <div class="column-box">
+              <hr class="mini-hr">
+              <a href="#top" class="rounded-button">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </a>
             </div>
           </article>
-
-
-
-
 
 
           <article class="card">
             <h2 class="text-center">
               Work experience
+              <span id="work-exp"></span>
             </h2>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://blog.cooleursdumonde.org/" target="blank"><img src="img/cdm_logo.png" class="logo" alt="Logo Cool'eurs du Monde" title="Cool'eurs du Monde"></a>
+                <a href="http://blog.cooleursdumonde.org/" target="blank">
+                  <img src="img/cdm_logo.png" class="logo" alt="Logo Cool'eurs du Monde" title="Cool'eurs du Monde">
+                </a>
               </div>
               <div class="group-s-content">
-                <h3>Event organization 'Journée jeunesse et solidarité internationale' <span class="dates"></span>
-                </h3>
-                <p>Event about the commitment of youth in international solidarity project. Communication, working group creation, registration of participants...</p>
+                <a href="http://blog.cooleursdumonde.org/" target="blank" title="Cool'eurs du Monde">
+                  <h3>
+                    Event organization 'Journée jeunesse et solidarité internationale'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Event about the commitment of youth in international solidarity project. Communication, working group creation, registration of participants...
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="https://vimeo.com/projetsem" target="blank"><img src="img/sem_logo.png" class="logo" alt="Logo Projet SEM" title="Projet SEM"></a>
+                <a href="https://vimeo.com/projetsem" target="blank">
+                  <img src="img/sem_logo.png" class="logo" alt="Logo Projet SEM" title="Projet SEM">
+                </a>
               </div>
               <div class="group-s-content">
-                <h3>Overseas volunteering placement 'Projet SEM' <span class="dates"></span>
-                </h3>
-                <p>Reflection and renovation around a project of environmental education structure and economic development of the Al Kalâa village, in Morocco.</p>
+                <a href="https://vimeo.com/projetsem" target="blank" title="Projet SEM">
+                  <h3>
+                    Overseas volunteering placement 'Projet SEM'&nbsp
+                  </h3>
+                </a>
+                <span class="dates">dates</span>
+                <p>
+                  Reflection and renovation around a project of environmental education structure and economic development of the Al Kalâa village, in Morocco.
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://www.radsi.org/" target="blank"><img src="img/radsi_logo.png" class="logo" alt="Logo RADSI" title="Réseau Aquitain pour le Développement et la Solidarité Internationale"></a>
+                <a href="http://2013.rencontres-aquitaines.org/" target="blank">
+                  <img src="img/racsi_logo.png" class="logo" alt="Logo RACSI" title="Rencontres Régionales de la Coopération et de la Solidarité Internationales">
+                </a>
               </div>
               <div class="group-s-content">
-                <h3>Event organization 'Rencontres Régionales de la Coopération et de la Solidarité Internationales' <span class="dates"></span>
-                </h3>
-                <p><a href="http://2013.rencontres-aquitaines.org/" target="blank" title="Rencontres Régionales de la Coopération et de la Solidarité Internationales"><img src="img/racsi_logo.png" class="logo-small" alt="Logo RACSI"></a>&nbspTwo days event about social innovation. Meetings and working groups on developments and international solidarity projects. Architecture of the website, communication, organization of the event...</p>
+                <a href="http://2013.rencontres-aquitaines.org/" target="blank" title="Rencontres Régionales de la Coopération et de la Solidarité Internationales">
+                  <h3>
+                    Event organization 'Rencontres Régionales de la Coopération et de la Solidarité Internationales'&nbsp
+                  </h3>
+                </a>
+                <span class="dates">dates encore</span>
+                <p>
+                  Two days event about social innovation created by&nbsp'
+                  <a href="http://www.radsi.org/" target="blank" title="Réseau Aquitain pour le Développement et la Solidarité Internationale">
+                    <img src="img/radsi_logo.png" class="logo-small" alt="Logo RACSI">
+                    RADSI
+                  </a>
+                  '. Meetings and working groups on developments and international solidarity projects. Architecture of the website, communication, organization of the event...
+                </p>
               </div>
             </div>
             <div class="xp-group">
               <div class="group-s-logo">
-                <a href="http://www.planete-sciences.org/national/" target="blank"><img src="img/plasci_logo.png" class="logo" alt="Logo Planète Sciences" title="Planète Sciences"></a>
+                <a href="http://www.planete-sciences.org/national/" target="blank">
+                  <img src="img/plasci_logo.png" class="logo" alt="Logo Planète Sciences" title="Planète Sciences">
+                </a>
               </div>
               <div class="group-s-content">
-                <h3>Science education with 'Planète Sciences' <span class="dates"></span>
-                </h3>
-                <p>Pedagogical project design of a natural area in order to raise environmental awareness. Activities, collective vegetable garden, </p>
+                <a href="http://www.planete-sciences.org/national/" target="blank" title="Planète Sciences">
+                  <h3>
+                    Science education with 'Planète Sciences'&nbsp
+                  </h3>
+                </a>
+                <span class="dates"></span>
+                <p>
+                  Pedagogical project design of a natural area in order to raise environmental awareness. Activities, collective vegetable garden, local and community dynamics...
+                </p>
               </div>
             </div>
-
+            <div class="column-box">
+              <hr class="mini-hr">
+              <a href="#top" class="rounded-button">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </a>
+            </div>
           </article>
 
 
 
-
-          <footer class="card">
-
-          </footer>
-
+          <article class="card">
+            <h2 class="text-center">
+              Interests
+              <span id="interests"></span>
+            </h2>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <a href="https://soundcloud.com/lowone" target="blank">
+                  <img src="img/soundcloud_logo.png" class="logo" alt="Logo Soundcloud" title="Soundcloud Lowone">
+                </a>
+              </div>
+              <div class="group-s-content">
+                <p class="interests-content">
+                  7 years of musical education, drums, percussion.<br>
+                  Musical composition, guitar, keyboards, melodica.<br>
+                  Computer assisted music, SuperCollider...
+                </p>
+                <p>
+                  Hiking, cycling, badminton, juggling.
+                </p>
+              </div>
+            </div>
+            <div class="column-box">
+              <hr class="mini-hr">
+              <a href="#top" class="rounded-button">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </div>
