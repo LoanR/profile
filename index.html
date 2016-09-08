@@ -5,7 +5,7 @@
     <title>Loan's profile</title>
 
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,800|Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,600,800|Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
 
     <!-- Fontawesome -->
     <script src="https://use.fontawesome.com/d93c867885.js"></script>
@@ -17,11 +17,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- js -->
+    <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/events.js"></script>
-
   </head>
+
   <body>
     <div class="container">
       <div class="row">
@@ -31,27 +31,45 @@
               <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                 <div id="navbar">
                   <ul class="menu">
-                    <a href="#education" class="smoothscroll navbar-link" title="Education">
+                    <a href="#education" class="smoothscroll navbar-link" title="Formation">
                       <li>
-                        <img src="img/education.svg" alt="" class="logo-navbar">
+                        <img src="img/education.svg" alt="" class="logo-navbar mediaquery-toggle-img">
+                        <div class="mediaquery-toggle-txt">
+                          Formation
+                          <!-- Education -->
+                        </div>
                       </li>
                     </a>
                     <li class="separator"></li>
-                    <a href="#work-exp" class="smoothscroll navbar-link" title="Work experience">
+                    <a href="#work-exp" class="smoothscroll navbar-link" title="Expérience">
                       <li>
-                        <img src="img/exp.svg" alt="" class="logo-navbar">
+                        <img src="img/exp.svg" alt="" class="logo-navbar mediaquery-toggle-img">
+                        <div class="mediaquery-toggle-txt">
+                          Expérience
+                          <!-- Experience -->
+                        </div>
                       </li>
                     </a>
                     <li class="separator"></li>
-                    <a href="#interests" class="smoothscroll navbar-link" title="Interests">
+                    <a href="#interests" class="smoothscroll navbar-link" title="Loisirs">
                       <li>
-                        <img src="img/interests.svg" alt="" class="logo-navbar">
+                        <img src="img/interests.svg" alt="" class="logo-navbar mediaquery-toggle-img">
+                        <div class="mediaquery-toggle-txt">
+                          Loisirs
+                          <!-- Interests -->
+                        </div>
                       </li>
                     </a>
                     <li class="separator"></li>
-                    <a href="mailto:loan.rbrt@gmail.com" class="navbar-link" title="Send me a mail!">
+                    <a href="mailto:loan.rbrt@gmail.com" class="navbar-link mailto-link" title="Envoyez moi un mail !">
                       <li>
-                        <img src="img/mail.svg" alt="" class="logo-navbar">
+                        <div class="mailto-content">
+                          <img src="img/mail.svg" alt="" class="logo-navbar mailto-logo">
+                          <div class="mediaquery-toggle-txt">
+                            &nbspContactez-moi
+                            <!-- &nbspContact me -->
+                          </div>
+                        </div>
                       </li>
                     </a>
                   </ul>
@@ -60,6 +78,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           <header class="card text-center" id="summary">
             <img id="identity" src="img/id.jpg" alt="Picture of Loan Robert" title="Loan Robert" width="200px">
@@ -67,11 +86,46 @@
               Loan Robert
             </h1>
             <h2>
-              Junior web developer
+              Web developpeur junior
+              <!-- Junior web developer -->
             </h2>
             <p>
-              After several years in environmental science and science communication studies, I am now learning to be a web developer with Ruby (on Rails) for the back-end and HTML, CSS, JS for the front.
+              Après quelques années d'études en sciences de l'environnement et en médiation et pédagogie, j'apprends maintenant à être developpeur web. Je suis à la recherche d'une alternance pour poursuivre ma découverte du milieu et en apprendre les bonnes pratiques avec le CESI et sa formation&nbsp<a href="https://www.cesi-alternance.fr/formation/informatique/infdim-web_concepteur" target="blank" class="inline-a">web concepteur</a>.
+              <!-- After several years in environmental science and science communication studies, I am now learning to be a web developer with Ruby (on Rails) for the back-end and HTML, CSS, JS for the front. -->
             </p>
+            <div class="info-summary">
+              <div class="info-summary-column">
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-home" aria-hidden="true"></i></div>
+                  <div class="info-content">6 rue Saint James<br>33000 Bordeaux</div>
+                </div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                  <div class="info-content">28 ans<!-- years old --></div>
+                </div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-car" aria-hidden="true"></i></div>
+                  <div class="info-content">permis B</div>
+                </div>
+                <div class="text-center">-</div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-code" aria-hidden="true"></i></div>
+                  <div class="info-content">Ruby, Html5, CSS3, JS, Ruby&nbspon&nbspRails</div>
+                </div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                  <div class="info-content">Photoshop, InDesign, Illustrator</div>
+                </div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+                  <div class="info-content">Suites bureatiques, Mac&nbspOS, Windows</div>
+                </div>
+                <div class="info-summary-group">
+                  <div class="info-logo"><i class="fa fa-flag" aria-hidden="true"></i></div>
+                  <div class="info-content">Anglais: TOEIC&nbsp860/990, CLES&nbsp1&nbsp&&nbsp2</div>
+                </div>
+              </div>
+            </div>
             <div class="column-box">
               <hr class="mini-hr">
               <div class="socials">
@@ -90,9 +144,11 @@
               </div>
             </div>
           </header>
+
           <article class="card">
             <h2 class="text-center">
-              Education
+              Formation
+              <!-- Education -->
               <span id="education"></span>
             </h2>
             <div class="xp-group">
@@ -104,12 +160,13 @@
               <div class="group-s-content">
                 <a href="https://www.lewagon.com/" target="blank" title="Le Wagon">
                   <h3>
-                    Le Wagon - FullStack developer&nbsp
+                    Le Wagon - Developpeur fullstack<!-- FullStack developer -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Juillet 2016 - août 2016</span>
                 <p>
-                  9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails.
+                  Formation intensive de 9 semaines de code pour apprendre HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku et Ruby on Rails.
+                  <!-- 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails. -->
                 </p>
               </div>
             </div>
@@ -122,22 +179,24 @@
               <div class="group-s-content">
                 <a href="http://www.masterset.fr/mediation" target="blank" title="Aix-Marseille Universités">
                   <h3>
-                    Master degree - 'Médiation en environnement'&nbsp
+                    Master professionnel - Médiation en environnement
+                    <!-- Master degree - 'Médiation en environnement' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Septembre 2010 - septembre 2012</span>
                 <p>
-                  Environmental sciences, communication, educational sciences, sociology, scientific journalism. Science meetings designed with the university and internship with '
-                    <a href="http://www.lespetitsdebrouillards.org/" target="blank" title="Les Petits Débrouillards">
-                      <img src="img/petitsdebrouillards_logo.png" class="logo-small" alt="Logo Les Petits Débrouillards">
-                      &nbspLes Petits Débrouillards
-                    </a>
-                  ' and '
-                    <a href="https://www.facebook.com/robinsdesvilles.lyon/" target="blank" title="Les Robins des Villes">
-                      <img src="img/robinsdesvilles_logo.png" class="logo-small" alt="Logo Les Robins des Villes">
-                      &nbspLes Robins des Villes
-                    </a>
-                  '.
+                  Sciences de l'environnement, communication, sciences de l'éducation, sociologie, journalisme scientifique. Conférences scientifiques organisées avec l'université et stages avec
+                  <!-- Environmental sciences, communication, educational sciences, sociology, scientific journalism. Science meetings designed with the university and internship with -->
+                  <a href="http://www.lespetitsdebrouillards.org/" target="blank" title="Les Petits Débrouillards" class="inline-a">
+                    <!-- <img src="img/petitsdebrouillards_logo.png" class="logo-small" alt="Logo Les Petits Débrouillards"> -->
+                    Les Petits Débrouillards
+                  </a>
+                  et
+                  <!-- and -->
+                  <a href="https://www.facebook.com/robinsdesvilles.lyon/" target="blank" title="Les Robins des Villes" class="inline-a">
+                    <!-- <img src="img/robinsdesvilles_logo.png" class="logo-small" alt="Logo Les Robins des Villes"> -->
+                    Les Robins des Villes.
+                  </a>
                 </p>
               </div>
             </div>
@@ -150,12 +209,14 @@
               <div class="group-s-content">
                 <a href="http://sciences.univ-amu.fr/" target="blank" title="Aix-Marseille Universités">
                   <h3>
-                    Bachelor degree - 'Biologie évolution environnement'&nbsp
+                    Licence - Biologie évolution environnement
+                    <!-- Bachelor degree - 'Biologie évolution environnement' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Septembre 2009 - juillet 2010</span>
                 <p>
-                  Ecology, geology, biodiversity, biology, chemistry, evolution and other environmental sciences.
+                  Écologie, géologie, biodiversité, biologie, chimie, évolution et autres sciences de l'environnement.
+                  <!-- Ecology, geology, biodiversity, biology, chemistry, evolution and other environmental sciences. -->
                 </p>
               </div>
             </div>
@@ -168,12 +229,14 @@
               <div class="group-s-content">
                 <a href="http://www.univ-orleans.fr/" target="blank" title="Université d'Orléans">
                   <h3>
-                    Studies 'Astronomie et astrophysique'&nbsp
+                    Formation universitaire - Astronomie et astrophysique
+                    <!-- Studies 'Astronomie et astrophysique' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Septembre 2009 - juillet 2010</span>
                 <p>
-                  Basic course in astronomy and astrophysics.
+                  Formation de base en astronomie et astrophysique.
+                  <!-- Basic course in astronomy and astrophysics. -->
                 </p>
               </div>
             </div>
@@ -186,12 +249,14 @@
               <div class="group-s-content">
                 <a href="http://www.iutlaroche.univ-nantes.fr/" target="blank" title="IUT de La Roche sur Yon">
                   <h3>
-                    Two-year university degree 'Génie biologique, environnement'&nbsp
+                    DUT - Génie biologique, génie de l'environnement
+                    <!-- Two-year university degree 'Génie biologique, environnement' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Septembre 2007 - juillet 2009</span>
                 <p>
-                  Environmental sciences, laboratory sciences.
+                  Sciences de l'environnement, sciences de laboratoire.
+                  <!-- Environmental sciences, laboratory sciences. -->
                 </p>
               </div>
             </div>
@@ -203,10 +268,10 @@
             </div>
           </article>
 
-
           <article class="card">
             <h2 class="text-center">
-              Work experience
+              Expérience
+              <!-- Work experience -->
               <span id="work-exp"></span>
             </h2>
             <div class="xp-group">
@@ -218,12 +283,15 @@
               <div class="group-s-content">
                 <a href="http://blog.cooleursdumonde.org/" target="blank" title="Cool'eurs du Monde">
                   <h3>
-                    Event organization 'Journée jeunesse et solidarité internationale'&nbsp
+                    Organisation événementielle - Journée jeunesse et solidarité internationale
+
+                    <!-- Event organization 'Journée jeunesse et solidarité internationale' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Septembre 2013 - octobre 2013</span>
                 <p>
-                  Event about the commitment of youth in international solidarity project. Communication, working group creation, registration of participants...
+                  Evénement sur l'engagement des jeunes dans des projets de solidarité internationale, présentation de projets, témoignages. Communication, costruction des ateliers, gestion des inscriptions...
+                  <!-- Event about the commitment of youth in international solidarity project. Communication, working group creation, registration of participants... -->
                 </p>
               </div>
             </div>
@@ -236,12 +304,14 @@
               <div class="group-s-content">
                 <a href="https://vimeo.com/projetsem" target="blank" title="Projet SEM">
                   <h3>
-                    Overseas volunteering placement 'Projet SEM'&nbsp
+                    Projet de solidarité internationale - Projet SEM
+                    <!-- Overseas volunteering placement 'Projet SEM' -->
                   </h3>
                 </a>
-                <span class="dates">dates</span>
+                <span class="dates">Août 2013</span>
                 <p>
-                  Reflection and renovation around a project of environmental education structure and economic development of the Al Kalâa village, in Morocco.
+                  Rénovation d'une structure d'éducation à l'environnement et de promotion du développement économique local dans le village d'Al Kalâa, au Maroc.
+                  <!-- Reflection and renovation around a project of environmental education structure and economic development of the Al Kalâa village, in Morocco. -->
                 </p>
               </div>
             </div>
@@ -254,17 +324,20 @@
               <div class="group-s-content">
                 <a href="http://2013.rencontres-aquitaines.org/" target="blank" title="Rencontres Régionales de la Coopération et de la Solidarité Internationales">
                   <h3>
-                    Event organization 'Rencontres Régionales de la Coopération et de la Solidarité Internationales'&nbsp
+                    Organisation événementielle - Rencontres Régionales de la Coopération et de la Solidarité Internationales
+                    <!-- Event organization 'Rencontres Régionales de la Coopération et de la Solidarité Internationales' -->
                   </h3>
                 </a>
-                <span class="dates">dates encore</span>
+                <span class="dates">Janvier 2013 - juillet 2013</span>
                 <p>
-                  Two days event about social innovation created by&nbsp'
-                  <a href="http://www.radsi.org/" target="blank" title="Réseau Aquitain pour le Développement et la Solidarité Internationale">
-                    <img src="img/radsi_logo.png" class="logo-small" alt="Logo RACSI">
-                    RADSI
+                  Événement de deux jours centré sur les innovation sociales, créé par le
+                  <!-- Two days event about social innovation created by -->
+                  <a href="http://www.radsi.org/" target="blank" title="Réseau Aquitain pour le Développement et la Solidarité Internationale" class="inline-a">
+                    <!-- <img src="img/radsi_logo.png" class="logo-small" alt="Logo RACSI"> -->
+                    RADSI.
                   </a>
-                  '. Meetings and working groups on developments and international solidarity projects. Architecture of the website, communication, organization of the event...
+                  Conférences et ateliers sur des projets de développement et de solidarité internationale. Architecture du site web de l'événement, communication, organisation de l'événement...
+                  <!-- Meetings and working groups on developments and international solidarity projects. Architecture of the website, communication, organization of the event... -->
                 </p>
               </div>
             </div>
@@ -277,12 +350,14 @@
               <div class="group-s-content">
                 <a href="http://www.planete-sciences.org/national/" target="blank" title="Planète Sciences">
                   <h3>
-                    Science education with 'Planète Sciences'&nbsp
+                    Médiation scientifique - Planète Sciences
+                    <!-- Science education with 'Planète Sciences' -->
                   </h3>
                 </a>
-                <span class="dates"></span>
+                <span class="dates">Mars 2012 - août 2012</span>
                 <p>
-                  Pedagogical project design of a natural area in order to raise environmental awareness. Activities, collective vegetable garden, local and community dynamics...
+                  Développement du projet pédagogique de l'Espace Naturel Sensible de l'éco-quartier "Les Docks de Ris". Conception d'activités pédagogiques, prospection et entretien du réseau, propositions d'aménagement, animation...
+                  <!-- Pedagogical project design of a natural area in order to raise environmental awareness. Activities, collective vegetable garden, local and community dynamics... -->
                 </p>
               </div>
             </div>
@@ -294,11 +369,10 @@
             </div>
           </article>
 
-
-
           <article class="card">
             <h2 class="text-center">
-              Interests
+              Loisirs
+              <!-- Interests -->
               <span id="interests"></span>
             </h2>
             <div class="xp-group">
@@ -308,13 +382,86 @@
                 </a>
               </div>
               <div class="group-s-content">
-                <p class="interests-content">
-                  7 years of musical education, drums, percussion.<br>
-                  Musical composition, guitar, keyboards, melodica.<br>
-                  Computer assisted music, SuperCollider...
-                </p>
+                <h3>
+                  Musique
+                  <!-- Music -->
+                </h3>
                 <p>
-                  Hiking, cycling, badminton, juggling.
+                  7 ans d'éducation musicale, batterie, percussion.<br>
+                  Composition musicale, guitare, instruments à clavier, mélodica.<br>
+                  Musique assistée par ordinateur, utilisation du logiciel SuperCollider...
+                  <!-- 7 years of musical education, drums, percussion.<br>
+                  Musical composition, guitar, keyboards, melodica.<br>
+                  Computer assisted music, SuperCollider... -->
+                </p>
+              </div>
+            </div>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <img src="img/hiking.svg" class="logo" alt="Hiking" title="Hiking">
+              </div>
+              <div class="group-s-content">
+                <h3>
+                  Randonnée
+                  <!-- Hiking -->
+                </h3>
+                <p>
+                  Pour voir du pays, profiter du grand air, faire une vraie coupure.
+                </p>
+              </div>
+            </div>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <img src="img/cycling.svg" class="logo" alt="Cycling" title="Cycling">
+              </div>
+              <div class="group-s-content">
+                <h3>
+                  Vélo
+                  <!-- Cycling -->
+                </h3>
+                <p>
+                  Pas vraiment au quotidien, plutôt en randonnée.
+                </p>
+              </div>
+            </div>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <img src="img/badminton.svg" class="logo" alt="Badminton" title="Badminton">
+              </div>
+              <div class="group-s-content">
+                <h3>
+                  Badminton
+                </h3>
+                <p>
+                  Pour me dépenser.
+                </p>
+              </div>
+            </div>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <img src="img/juggling.svg" class="logo" alt="Juggling" title="Juggling">
+              </div>
+              <div class="group-s-content">
+                <h3>
+                  Jonglage
+                  <!-- Juggling -->
+                </h3>
+                <p>
+                  Monocycle et autres activités de base.
+                </p>
+              </div>
+            </div>
+            <div class="xp-group">
+              <div class="group-s-logo">
+                <img src="img/books.svg" class="logo" alt="Reading" title="Reading">
+              </div>
+              <div class="group-s-content">
+                <h3>
+                  Lecture
+                  <!-- Reading -->
+                </h3>
+                <p>
+                  En ce moment, pas mal de Neil Gaiman.
                 </p>
               </div>
             </div>
@@ -328,112 +475,5 @@
         </div>
       </div>
     </div>
-      <!-- <header class="card text-center" id="summary">
-        <img id="identity" src="img/id.jpg" alt="Me in a picture" title="Me in a picture, unbeliveable!" width="200px">
-        <h1>
-          Loan Robert
-        </h1>
-        <h2>
-          Student @Le Wagon
-        </h2>
-        <p>
-          I'm a student, this is <strong>incredible</strong> !
-        </p>
-      </header>
-
-      <section class="card">
-        <div class="text-center">
-          <a class="clickable button align" href="https://fr.linkedin.com/in/loanrobert" title="It's a button, and when you click it moves, WOAW!" target="blank">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin
-          </a>
-          <a class="clickable button align" href="https://github.com/LoanR" title="This one too, OMG!" target="blank">
-            <i class="fa fa-github-square" aria-hidden="true"></i> Github
-          </a>
-        </div>
-      </section>
-
-      <section class="card" id="books">
-        <h2 class="text-center">
-          The books I am reading
-        </h2>
-
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img src="img/good_omens.jpg" alt="Good Omens front cover" title="Neil Gaiman / Terry Pratchett: Good Omens" width="200px">
-              </td>
-              <td>
-                <h3>
-                  Good Omens
-                </h3>
-                <p>
-                  <span class="authors">Neil Gaiman / Terry Pratchett</span><br>
-                  It is the coming of the End Times: the Apocalypse is near, and Final Judgement will soon descend upon the human species. So, you know, Pratchett and Gaiman, fantasy and humor.
-                </p>
-                <div class="text-center">
-                  <ul class="list-inline">
-                    <li>
-                      <a class="button align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                      <a class="button align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="img/flowers_for_algernon.jpg" alt="Flowers for Algernon front cover" title="Daniel Keyes: Flowers for Algernon" width="200px">
-              </td>
-              <td>
-                <h3>
-                  Flowers for Algernon
-                </h3>
-                <p>
-                  <span class="authors">Daniel Keyes</span><br>
-                  Charlie Gordon is selected to undergo an experimental surgical technique to increase his intelligence. The technique had already been successfully tested on Algernon, a laboratory mouse, but something went wrong with Algernon...
-                </p>
-                <div class="text-center">
-                  <ul class="list-inline">
-                    <li>
-                      <a class="button align" href="#" title="Me too, I love it!"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                      <a class="button align" href="#" title="Wah, so cool I need to share it!"><i class="fa fa-share-square-o" aria-hidden="true"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <footer class="card text-center" id="footer">
-        <h2>
-          About this page
-        </h2>
-        <p>
-          This page has been made with love.
-        </p>
-        <div>
-          <ul class="list-inline">
-            <li>
-              <a class="align" href="#" title="No terms">Terms</a>
-            </li>
-            <li>
-              <a class="align" href="#" title="No NSA on this page">Privacy</a>
-            </li>
-            <li>
-              <a class="align" href="#" title="Really good security, GIGN-like or something">Security</a>
-            </li>
-          </ul>
-        </div>
-        <p>
-          &copy;2016 Le Wagon Inc. USC
-        </p>
-      </footer> -->
   </body>
 </html>
