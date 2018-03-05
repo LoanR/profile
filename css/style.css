@@ -212,6 +212,10 @@ h3 {
   transition: all 0.4s ease;
 }
 
+.fab {
+  color: #D23333;
+}
+
 a:hover {
   text-decoration: none;
 }
