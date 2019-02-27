@@ -1,0 +1,13 @@
+$brand-color: #35495e;
+
+.full-width {
+  width: 100%;
+  color: $brand-color;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
