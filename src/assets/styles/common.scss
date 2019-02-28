@@ -1,0 +1,21 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+
+  body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-color;
+    font-family: $content-font;
+    color: $dark-color;
+
+    h1, h2, h3, h4, h5, h6, nav {
+      font-family: $title-font;
+    }
+  }
+}

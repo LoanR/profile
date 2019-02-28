@@ -25,12 +25,19 @@ module.exports = merge(baseConfig, {
         sourceMap: true
       }),
       new OptimizeCSSAssetsPlugin({})
-    ]
+    ],
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          chunks: 'all'
+        }
+      }
+    }
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js',
-    publicPath: ''
+    path: path.resolve(__dirname, '../dist')
   },
 
   module: {
@@ -54,7 +61,7 @@ module.exports = merge(baseConfig, {
       toType: 'dir'
     }]),
     new MiniCssExtractPlugin({
-      filename: 'assets/styles/[name].css'
+      filename: 'assets/styles/main.css'
     })
   ]
 })

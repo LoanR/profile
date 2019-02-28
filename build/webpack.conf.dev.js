@@ -4,12 +4,12 @@ const baseConfig = require('./webpack.conf.base')
 
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = merge(baseConfig, {
   // mode: 'development',
 
   devServer: {
+    // historyApiFallback: true,
     hot: true,
     watchOptions: {
       poll: true
@@ -48,11 +48,6 @@ module.exports = merge(baseConfig, {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true
-    })
+    new webpack.HotModuleReplacementPlugin()
   ]
 })

@@ -1,0 +1,32 @@
+div {
+  padding: 0 5px 0;
+
+  a {
+    display: inline-block;
+    padding: 0.5rem;
+    color: $light-color;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    position: relative;
+
+    &:after {
+      transition: all 0.5s ease;
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: transparent;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $contrast-color;
+    }
+
+    &.router-link-exact-active {
+      color: $contrast-color;
+    }
+  }
+}
