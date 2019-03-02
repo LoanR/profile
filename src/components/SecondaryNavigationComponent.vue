@@ -8,7 +8,7 @@
         <secondary-navigation-link-component
           :link="link"
           :index="i"
-          :is-selected="subNavIndex == i"
+          :is-selected="selectedSubPartIndex == i"
           @selectSubPart="selectSubPart"
         />
       </li>
@@ -26,7 +26,7 @@ export default {
 
   props: {
     rawDatas: { type: Array, required: true },
-    subNavIndex: { type: Number, required: true }
+    selectedSubPartIndex: { type: Number, required: true }
   },
 
   computed: {
@@ -38,8 +38,8 @@ export default {
   },
 
   methods: {
-    selectSubPart (subPartId) {
-      this.$emit('selectSubPart', subPartId)
+    selectSubPart (subPartIndex) {
+      this.$emit('selectSubPart', subPartIndex)
     }
   }
 }

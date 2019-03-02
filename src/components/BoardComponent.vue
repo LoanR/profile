@@ -1,7 +1,13 @@
 <template>
   <div id="board">
-    <card-component :card-content-data="rawSubData.card" />
-    <board-content-component :board-content-data="rawSubData.description" />
+    <card-component :card-content-data="rawSubData.cards[selectedCardIndex]" />
+    <board-content-component
+      :board-content-data="rawSubData.descriptions"
+      :card-selection-title="rawSubData.cardSelectionTitle"
+      :card-choices="cardChoices"
+      :selected-card-index="selectedCardIndex"
+      @selectCard="selectCard"
+    />
   </div>
 </template>
 
@@ -16,7 +22,20 @@ export default {
   },
 
   props: {
-    rawSubData: { type: Object, required: true }
+    rawSubData: { type: Object, required: true },
+    selectedCardIndex: { type: Number, required: true }
+  },
+
+  computed: {
+    cardChoices () {
+      return this.rawSubData.cards.map(card => card.selectionName)
+    }
+  },
+
+  methods: {
+    selectCard (cardIndex) {
+      this.$emit('selectCard', cardIndex)
+    }
   }
 }
 </script>

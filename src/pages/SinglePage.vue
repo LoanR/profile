@@ -7,10 +7,14 @@
       <secondary-navigation-component
         v-if="rawDatas.length > 1"
         :raw-datas="rawDatas"
-        :sub-nav-index="subNavIndex"
+        :selected-sub-part-index="selectedSubPartIndex"
         @selectSubPart="selectSubPart"
       />
-      <board-component :raw-sub-data="rawDatas[subNavIndex]" />
+      <board-component
+        :raw-sub-data="rawDatas[selectedSubPartIndex]"
+        :selected-card-index="selectedCardIndex"
+        @selectCard="selectCard"
+      />
     </div>
   </div>
 </template>
@@ -31,19 +35,25 @@ export default {
 
   data () {
     return {
-      subNavIndex: 0
+      selectedSubPartIndex: 0,
+      selectedCardIndex: 0
     }
   },
 
   watch: {
     $route (to, from) {
-      this.subNavIndex = 0
+      this.selectedSubPartIndex = 0
+      this.selectedCardIndex = 0
     }
   },
 
   methods: {
-    selectSubPart (subPartId) {
-      this.subNavIndex = subPartId
+    selectSubPart (subPartIndex) {
+      this.selectedCardIndex = 0
+      this.selectedSubPartIndex = subPartIndex
+    },
+    selectCard (cardIndex) {
+      this.selectedCardIndex = cardIndex
     }
   }
 }
