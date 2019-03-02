@@ -4,7 +4,13 @@
       <main-navigation-component />
     </div>
     <div class="board-container">
-      <board-component :raw-data="rawData" />
+      <secondary-navigation-component
+        v-if="rawDatas.length > 1"
+        :raw-datas="rawDatas"
+        :sub-nav-index="subNavIndex"
+        @selectSubPart="selectSubPart"
+      />
+      <board-component :raw-sub-data="rawDatas[subNavIndex]" />
     </div>
   </div>
 </template>
@@ -12,14 +18,34 @@
 <script>
 import BoardComponent from '../components/BoardComponent.vue'
 import MainNavigationComponent from '../components/MainNavigationComponent.vue'
+import SecondaryNavigationComponent from '../components/SecondaryNavigationComponent.vue'
 
 export default {
   components: {
     'board-component': BoardComponent,
-    'main-navigation-component': MainNavigationComponent
+    'main-navigation-component': MainNavigationComponent,
+    'secondary-navigation-component': SecondaryNavigationComponent
   },
 
-  props: { rawData: { type: Object, required: true } }
+  props: { rawDatas: { type: Array, required: true } },
+
+  data () {
+    return {
+      subNavIndex: 0
+    }
+  },
+
+  watch: {
+    $route (to, from) {
+      this.subNavIndex = 0
+    }
+  },
+
+  methods: {
+    selectSubPart (subPartId) {
+      this.subNavIndex = subPartId
+    }
+  }
 }
 </script>
 
@@ -39,9 +65,13 @@ export default {
       height: 100%;
       width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+
+      >* {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 500px;
+        border-radius: 2px;
+      }
 
       color: red;
     }

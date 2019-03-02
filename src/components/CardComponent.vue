@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ReadableContentComponent from '../components/ReadableContentComponent.vue'
+import ReadableContentComponent from './ReadableContentComponent.vue'
 
 export default {
   components: {
@@ -48,7 +48,7 @@ export default {
     right: 50%;
     top: -10px;
     bottom: -10px;
-    border-radius: 3px;
+    border-radius: 2px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 

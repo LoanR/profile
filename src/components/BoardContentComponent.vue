@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ReadableContentComponent from '../components/ReadableContentComponent.vue'
+import ReadableContentComponent from './ReadableContentComponent.vue'
 
 export default {
   components: {
