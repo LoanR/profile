@@ -3,7 +3,7 @@ export const HOME_DATA = {
   displayTitle: 'Loan ROBERT',
   rawDatas: [
     {
-      subNavIconPath: 'src/assets/img/random-solid.svg',
+      subNavIconPath: 'static/img/random-solid.svg',
       subNavTitle: 'random',
       cardSelectionTitle: '',
       cards: [
@@ -44,7 +44,7 @@ export const PAGES_DATA = [
     displayTitle: 'expérience',
     rawDatas: [
       {
-        subNavIconPath: 'src/assets/img/random-solid.svg',
+        subNavIconPath: 'static/img/random-solid.svg',
         subNavTitle: 'random',
         cardSelectionTitle: '',
         cards: [
@@ -77,7 +77,7 @@ export const PAGES_DATA = [
         ]
       },
       {
-        subNavIconPath: 'src/assets/img/vuejs-logo.png',
+        subNavIconPath: 'static/img/vuejs-logo.png',
         subNavTitle: 'Vue.js',
         cardSelectionTitle: 'Top albums !',
         cards: [
@@ -136,7 +136,7 @@ export const PAGES_DATA = [
     displayTitle: 'formation',
     rawDatas: [
       {
-        subNavIconPath: 'src/assets/img/vuejs-logo.png',
+        subNavIconPath: 'static/img/vuejs-logo.png',
         subNavTitle: 'Vue.js',
         cardSelectionTitle: '',
         cards: [
@@ -175,7 +175,7 @@ export const PAGES_DATA = [
     displayTitle: 'loisirs',
     rawDatas: [
       {
-        subNavIconPath: 'src/assets/img/vuejs-logo.png',
+        subNavIconPath: 'static/img/vuejs-logo.png',
         subNavTitle: 'Vue.js',
         cardSelectionTitle: '',
         cards: [

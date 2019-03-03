@@ -56,12 +56,12 @@ module.exports = merge(baseConfig, {
 
   plugins: [
     new CopyWebpackPlugin([{
-      from: resolve('src/assets/img'),
-      to: resolve('dist/assets/img'),
+      from: resolve('static/img'),
+      to: resolve('dist/static/img'),
       toType: 'dir'
     }]),
     new MiniCssExtractPlugin({
-      filename: 'assets/styles/main.css'
+      filename: 'assets/main.css'
     })
   ]
 })
