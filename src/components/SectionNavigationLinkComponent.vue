@@ -8,23 +8,38 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/_colors.scss';
-  @import '../assets/styles/nav_link.scss';
+  @import '../assets/styles/_transitions.scss';
+  @import '../assets/styles/vue_nav_link.scss';
 
-  a:hover:after {
-    background: linear-gradient(
-      0.25turn, $dark-color,
-      $contrast-color 20%,
-      $contrast-color 80%,
-      $dark-color);
-    opacity: 0.3;
-  }
+  div a {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: transparent;
+      opacity: 0;
+      transition: all $t-duration $t-timing-function;
+    }
 
-  a.router-link-exact-active:after {
-    background: linear-gradient(
-      0.25turn, $dark-color,
-      $contrast-color 20%,
-      $contrast-color 80%,
-      $dark-color);
-    opacity: 1;
+    &:hover::after {
+      background: linear-gradient(
+        0.25turn, $dark-color,
+        $primary-color 20%,
+        $primary-color 80%,
+        $dark-color);
+      opacity: 0.4;
+    }
+
+    &.router-link-exact-active::after {
+      background: linear-gradient(
+        0.25turn, $dark-color,
+        $primary-color 20%,
+        $primary-color 80%,
+        $dark-color);
+      opacity: 1;
+    }
   }
 </style>

@@ -42,9 +42,8 @@ export default {
 
 <style lang="scss" scoped>
   #board-content {
-    position: absolute;
-    right: 0;
-    left: 50%;
+    width: 50%;
+    box-sizing: border-box;
     padding: 0 1rem;
   }
 </style>

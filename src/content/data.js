@@ -54,7 +54,7 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Super expérience'
             },
-            insert: '<p>Mon expérience de la vie est très cool.</p>',
+            insert: '<p>Mon <strong>expérience</strong> de la vie est très cool.</p>',
             bgPath: 'https://img.discogs.com/Snn9sKC4FAZBy9wK_PB--JYdP8c=/600x380/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-56168-1500637484-8220.jpeg.jpg',
             iconPath: 'https://img.discogs.com/cj84quS1SXrc1QgI3mj3t5vq2PY=/fit-in/600x529/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-10740441-1503693131-5680.jpeg.jpg'
           }
@@ -87,7 +87,7 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Première expérience trip hop'
             },
-            insert: '<p>Cette expérience était top</p>',
+            insert: '<p>Cette expérience était top</p> <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
             bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
             iconPath: 'https://img.discogs.com/-Fwk7Ivh5syjL0TXicCBigFXRx8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1319919-1215840361.jpeg.jpg'
           },
@@ -137,6 +137,39 @@ export const PAGES_DATA = [
     rawDatas: [
       {
         subNavIconPath: 'static/img/vuejs-logo.png',
+        subNavTitle: 'Vue.js',
+        cardSelectionTitle: '',
+        cards: [
+          {
+            selectionName: '',
+            title: {
+              tag: 'h1',
+              content: 'Formation'
+            },
+            insert: '<p>Je suis allé à l\'école</p>',
+            bgPath: 'https://img.discogs.com/hLvgm7J6qvo8TUYMQvH274oXfbI=/600x353/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-140203-1415800442-4095.jpeg.jpg',
+            iconPath: 'https://img.discogs.com/pU62yLqGpzDbKuyCb3HK90FeE8k=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6260212-1415012248-8601.jpeg.jpg'
+          }
+        ],
+        descriptions: [
+          {
+            title: {
+              tag: 'h2',
+              content: 'Faire des exercices'
+            },
+            insert: '<p>waw</p>'
+          },
+          {
+            title: {
+              tag: 'h2',
+              content: 'Travailler la tête'
+            },
+            insert: '<p>super</p>'
+          }
+        ]
+      },
+      {
+        subNavIconPath: 'static/img/cesial_logo.png',
         subNavTitle: 'Vue.js',
         cardSelectionTitle: '',
         cards: [

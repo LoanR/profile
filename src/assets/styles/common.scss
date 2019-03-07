@@ -1,5 +1,6 @@
 @import 'colors.scss';
 @import 'fonts.scss';
+@import 'transitions.scss';
 
 html {
   margin: 0px;
@@ -12,7 +13,8 @@ html {
     width: 100%;
     background-color: $dark-color;
     font-family: $content-font;
-    color: $dark-color;
+    color: $light-color;
+    font-size: small;
 
     h1, h2, h3, h4, h5, h6, nav {
       font-family: $title-font;
@@ -20,10 +22,30 @@ html {
 
     h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0.5rem;
+      color: $primary-color;
     }
 
     p {
-      margin-top: 0.5rem;
+
+      strong {
+        color: $secondary-color;
+      }
+
+      em {
+        color: lighten($secondary-color, 30%);
+      }
+
+      a {
+        cursor: pointer;
+        box-shadow: inset 0 -1px $secondary-color;
+        transition: all $t-duration $t-timing-function;
+
+        &:hover, &.active-mutation-link {
+          color: $light-color;
+          box-shadow: inset 0 -2rem $secondary-color;
+        }
+      }
     }
+
   }
 }

@@ -6,9 +6,7 @@
     <a
       :class="{ 'active-mutation-link': isSelected }"
       @click="selectCard"
-    >
-      {{ linkContent }}
-    </a>
+    >{{ linkContent }}</a>
   </span>
 </template>
 
@@ -29,7 +27,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .active-mutation-link {
-    color: fuchsia;
-  }
+
 </style>

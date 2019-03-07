@@ -9,7 +9,9 @@
           :link="link"
           :index="i"
           :is-selected="selectedSubPartIndex == i"
+          :show-link="showLink"
           @selectSubPart="selectSubPart"
+          @showLinkAgain="showLinkAgain"
         />
       </li>
     </ul>
@@ -26,7 +28,8 @@ export default {
 
   props: {
     rawDatas: { type: Array, required: true },
-    selectedSubPartIndex: { type: Number, required: true }
+    selectedSubPartIndex: { type: Number, required: true },
+    showLink: { type: Boolean, required: true }
   },
 
   computed: {
@@ -40,6 +43,9 @@ export default {
   methods: {
     selectSubPart (subPartIndex) {
       this.$emit('selectSubPart', subPartIndex)
+    },
+    showLinkAgain () {
+      this.$emit('showLinkAgain')
     }
   }
 }
@@ -47,9 +53,10 @@ export default {
 
 <style lang="scss" scoped>
   #secondary-navigation {
-    background-color: #d0dbdd;
-    margin-right: 16px;
+    background-color: transparent;
+    background-repeat: repeat-y;
     width: 50px;
+    height: 100%;
 
     ul, li {
       margin:0;

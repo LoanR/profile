@@ -1,21 +1,43 @@
 <template>
   <div id="card">
     <div class="background-img-container">
-      <div
-        class="background-img"
-        :style="{ backgroundImage: 'url(\'' + cardContentData.bgPath + '\')' }"
-        alt="bg"
-      />
-      <img
-        class="thumbnail"
-        :src="iconPath"
-        alt="icon"
+      <transition
+        name="fade-img"
+        @after-leave="showCardAgain"
       >
+        <div
+          v-if="showCard"
+          class="background-img"
+          :style="{ backgroundImage: 'url(\'' + cardContentData.bgPath + '\')' }"
+          alt="bg"
+        />
+      </transition>
     </div>
-    <div class="card-presentation">
-      <readable-content-component
-        :part-content="cardContentData"
-      />
+    <div class="card-presentation-container">
+      <div class="card-presentation">
+        <transition
+          name="fade-text"
+          @after-leave="showCardAgain"
+        >
+          <readable-content-component
+            v-if="showCard"
+            :part-content="cardContentData"
+          />
+        </transition>
+      </div>
+    </div>
+    <div class="thumbnail-container">
+      <transition
+        name="fade-img"
+        @after-leave="showCardAgain"
+      >
+        <img
+          v-if="showCard"
+          class="thumbnail"
+          :src="iconPath"
+          alt="icon"
+        >
+      </transition>
     </div>
   </div>
 </template>
@@ -29,34 +51,43 @@ export default {
   },
 
   props: {
-    cardContentData: { type: Object, required: true }
+    cardContentData: { type: Object, required: true },
+    showCard: { type: Boolean, required: true }
   },
 
   computed: {
     iconPath () {
       return this.cardContentData.iconPath
     }
+  },
+
+  methods: {
+    showCardAgain () {
+      this.$emit('showCardAgain')
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/styles/_colors.scss';
+  @import '../assets/styles/vue_elem_transition.scss';
+
   #card {
-    position: absolute;
-    background-color: white;
+    position: relative;
+    background-color: $light-color;
     left: 0;
-    right: 50%;
     top: -10px;
-    bottom: -10px;
-    border-radius: 2px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    width: 50%;
+    height: calc(100% + 20px);
+    color: $dark-color;
 
     .background-img-container {
       width: 100%;
       height: 50%;
-      background-color: black;
-      margin-bottom: 47px;
+      background-color: $dark-color;
+      overflow: hidden;
 
       .background-img {
         width: 100%;
@@ -64,24 +95,35 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        filter: contrast(70%);
       }
     }
 
-    .thumbnail {
+    .card-presentation-container {
+      width: 100%;
+      height: 50%;
+      display: inline-block;
+      padding-top: 25px;
+
+      .card-presentation {
+        padding: 0 1rem;
+      }
+    }
+
+    .thumbnail-container {
+      background-color: $light-color;
+      position: absolute;
       max-width: 80px;
       max-height: 80px;
-      position: relative;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      box-shadow:
-        0 0 5px 1px rgba(0,0,0,0.3),
-        0 0 0 7px white;
-    }
+      border: 6px solid $light-color;
+      overflow: hidden;
 
-    .card-presentation {
-      padding: 0 1rem;
+      .thumbnail {
+        max-width: 80px;
+        display: block;
+      }
     }
-
   }
 </style>
