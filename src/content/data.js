@@ -13,7 +13,7 @@ export const HOME_DATA = {
             tag: 'h1',
             content: 'Loan ROBERT'
           },
-          insert: '<p>Coucou, c\'est un texte interprété par vue, c\'est <b>très dangereux</b>, alors il faut se méfier.</p>',
+          insert: '<p>Coucou, c\'est un texte interprété par vue, c\'est <strong>très dangereux</strong>, alors il faut se méfier.</p>',
           bgPath: 'https://img.discogs.com/wizd4GbbRhspQaGHUoAgRpjLGqQ=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-12210-1547150988-2970.jpeg.jpg',
           iconPath: 'https://img.discogs.com/QRjW4E5vnaz5eYrdWRGtBJC564E=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-381134-1263571571.jpeg.jpg'
         }

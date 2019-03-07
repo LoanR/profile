@@ -8,7 +8,7 @@
       name="fade-icon"
       @after-leave="showLinkAgain"
     >
-      <div v-if="showLink">
+      <div v-if="showPartLinks">
         <img
           :src="link.iconPath"
           :alt="link.title"
@@ -20,33 +20,43 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   props: {
     link: { type: Object, required: true },
     index: { type: Number, required: true },
-    isSelected: { type: Boolean, required: true },
-    showLink: { type: Boolean, required: true }
+    isSelected: { type: Boolean, required: true }
   },
 
-  mounted () {
+  computed: {
+    ...mapState(['partIndex', 'showPartLinks'])
+  },
+
+  created () {
     this.showLinkAgain()
   },
 
   methods: {
     selectSubPart () {
-      this.$emit('selectSubPart', this.index)
+      if (this.index !== this.partIndex) {
+        this.$store.commit('hideBoard')
+        this.$store.commit('hideCard')
+        this.$store.commit('setDisplayedCardIndex', 0)
+        this.$store.commit('setDisplayedPartIndex', this.index)
+      }
     },
     showLinkAgain () {
-      this.$emit('showLinkAgain')
+      this.$store.commit('displayPartLinks')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/_colors.scss';
-  @import '../assets/styles/_transitions.scss';
-  @import '../assets/styles/vue_elem_transition.scss';
+  @import '../../assets/styles/_colors.scss';
+  @import '../../assets/styles/_transitions.scss';
+  @import '../../assets/styles/vue_elem_transition.scss';
 
   button {
     border-top: 1px solid;

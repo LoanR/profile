@@ -17,7 +17,6 @@
       <div class="card-presentation">
         <transition
           name="fade-text"
-          @after-leave="showCardAgain"
         >
           <readable-content-component
             v-if="showCard"
@@ -29,12 +28,11 @@
     <div class="thumbnail-container">
       <transition
         name="fade-img"
-        @after-leave="showCardAgain"
       >
         <img
           v-if="showCard"
           class="thumbnail"
-          :src="iconPath"
+          :src="cardContentData.iconPath"
           alt="icon"
         >
       </transition>
@@ -43,6 +41,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import ReadableContentComponent from './ReadableContentComponent.vue'
 
 export default {
@@ -50,28 +49,24 @@ export default {
     'readable-content-component': ReadableContentComponent
   },
 
-  props: {
-    cardContentData: { type: Object, required: true },
-    showCard: { type: Boolean, required: true }
-  },
-
   computed: {
-    iconPath () {
-      return this.cardContentData.iconPath
+    ...mapState(['partIndex', 'cardIndex', 'showCard']),
+    cardContentData () {
+      return this.$store.state.pageParts[this.partIndex].cards[this.cardIndex]
     }
   },
 
   methods: {
     showCardAgain () {
-      this.$emit('showCardAgain')
+      this.$store.commit('displayCard')
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/_colors.scss';
-  @import '../assets/styles/vue_elem_transition.scss';
+  @import '../../assets/styles/_colors.scss';
+  @import '../../assets/styles/vue_elem_transition.scss';
 
   #card {
     position: relative;

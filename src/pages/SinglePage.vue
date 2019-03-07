@@ -9,32 +9,18 @@
           v-if="rawDatas.length > 1"
           class="wrapper"
         >
-          <secondary-navigation-component
-            :raw-datas="rawDatas"
-            :selected-sub-part-index="selectedSubPartIndex"
-            :show-link="showLink"
-            @selectSubPart="selectSubPart"
-            @showLinkAgain="showLinkAgain"
-          />
+          <secondary-navigation-component />
         </div>
       </transition>
-      <board-component
-        :raw-sub-data="rawDatas[selectedSubPartIndex]"
-        :selected-card-index="selectedCardIndex"
-        :show-board="showBoard"
-        :show-card="showCard"
-        @showBoardAgain="showBoardAgain"
-        @showCardAgain="showCardAgain"
-        @selectCard="selectCard"
-      />
+      <board-component />
     </div>
   </div>
 </template>
 
 <script>
-import BoardComponent from '../components/BoardComponent.vue'
-import MainNavigationComponent from '../components/MainNavigationComponent.vue'
-import SecondaryNavigationComponent from '../components/SecondaryNavigationComponent.vue'
+import BoardComponent from '../components/board/BoardComponent.vue'
+import MainNavigationComponent from '../components/main_navigation/MainNavigationComponent.vue'
+import SecondaryNavigationComponent from '../components/secondary_navigation/SecondaryNavigationComponent.vue'
 
 export default {
   components: {
@@ -45,46 +31,19 @@ export default {
 
   props: { rawDatas: { type: Array, required: true } },
 
-  data () {
-    return {
-      selectedSubPartIndex: 0,
-      selectedCardIndex: 0,
-      showBoard: true,
-      showCard: true,
-      showLink: true
-    }
-  },
-
   watch: {
     $route (to, from) {
-      this.showBoard = false
-      this.showCard = false
-      this.showLink = false
-      this.selectedSubPartIndex = 0
-      this.selectedCardIndex = 0
+      this.$store.commit('setPageContent', this.rawDatas)
+      this.$store.commit('setDisplayedPartIndex', 0)
+      this.$store.commit('setDisplayedCardIndex', 0)
+      this.$store.commit('hideBoard')
+      this.$store.commit('hideCard')
+      this.$store.commit('hidePartLinks')
     }
   },
 
-  methods: {
-    selectSubPart (subPartIndex) {
-      this.showBoard = false
-      this.showCard = false
-      this.selectedCardIndex = 0
-      this.selectedSubPartIndex = subPartIndex
-    },
-    selectCard (cardIndex) {
-      this.showCard = false
-      this.selectedCardIndex = cardIndex
-    },
-    showBoardAgain () {
-      this.showBoard = true
-    },
-    showCardAgain () {
-      this.showCard = true
-    },
-    showLinkAgain () {
-      this.showLink = true
-    }
+  created () {
+    this.$store.commit('setPageContent', this.rawDatas)
   }
 }
 </script>

@@ -9,14 +9,14 @@
         :key="i"
         :index="i"
         :link-content="linkContent"
-        :is-selected="selectedCardIndex == i"
-        @selectCard="selectCard"
+        :is-selected="cardIndex == i"
       />
     </p>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import CardMutationLinkComponent from './CardMutationLinkComponent.vue'
 
 export default {
@@ -24,15 +24,16 @@ export default {
     'card-mutation-link-component': CardMutationLinkComponent
   },
 
-  props: {
-    cardSelectionTitle: { type: String, required: true },
-    cardChoices: { type: Array, required: true },
-    selectedCardIndex: { type: Number, required: true }
-  },
-
-  methods: {
-    selectCard (cardIndex) {
-      this.$emit('selectCard', cardIndex)
+  computed: {
+    ...mapState(['pageParts', 'partIndex', 'cardIndex']),
+    currentPagePart () {
+      return this.pageParts[this.partIndex]
+    },
+    cardChoices () {
+      return this.currentPagePart.cards.map(card => card.selectionName)
+    },
+    cardSelectionTitle () {
+      return this.currentPagePart.cardSelectionTitle
     }
   }
 }

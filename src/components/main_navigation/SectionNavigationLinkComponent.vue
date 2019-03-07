@@ -7,9 +7,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/_colors.scss';
-  @import '../assets/styles/_transitions.scss';
-  @import '../assets/styles/vue_nav_link.scss';
+  @import '../../assets/styles/_colors.scss';
+  @import '../../assets/styles/_transitions.scss';
+  @import '../../assets/styles/vue_nav_link.scss';
 
   div a {
     &::after {

@@ -1,11 +1,7 @@
 <template>
   <div id="board-content">
     <card-mutation-links-component
-      v-if="cardChoices.length > 1"
-      :card-selection-title="cardSelectionTitle"
-      :card-choices="cardChoices"
-      :selected-card-index="selectedCardIndex"
-      @selectCard="selectCard"
+      v-if="currentPagePart.cards.length > 1"
     />
     <readable-content-component
       v-for="(part, i) in boardContentData"
@@ -16,6 +12,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import ReadableContentComponent from './ReadableContentComponent.vue'
 import CardMutationLinksComponent from './CardMutationLinksComponent.vue'
 
@@ -25,16 +22,13 @@ export default {
     'card-mutation-links-component': CardMutationLinksComponent
   },
 
-  props: {
-    boardContentData: { type: Array, required: true },
-    cardSelectionTitle: { type: String, required: true },
-    cardChoices: { type: Array, required: true },
-    selectedCardIndex: { type: Number, required: true }
-  },
-
-  methods: {
-    selectCard (cardIndex) {
-      this.$emit('selectCard', cardIndex)
+  computed: {
+    ...mapState(['pageParts', 'partIndex']),
+    currentPagePart () {
+      return this.pageParts[this.partIndex]
+    },
+    boardContentData () {
+      return this.currentPagePart.descriptions
     }
   }
 }

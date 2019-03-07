@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   props: {
     index: { type: Number, required: true },
@@ -18,9 +20,16 @@ export default {
     isSelected: { type: Boolean, required: true }
   },
 
+  computed: {
+    ...mapState(['cardIndex'])
+  },
+
   methods: {
     selectCard () {
-      this.$emit('selectCard', this.index)
+      if (this.index !== this.cardIndex) {
+        this.$store.commit('hideCard')
+        this.$store.commit('setDisplayedCardIndex', this.index)
+      }
     }
   }
 }
