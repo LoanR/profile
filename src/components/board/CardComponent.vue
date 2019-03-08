@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import ReadableContentComponent from './ReadableContentComponent.vue'
 
 export default {
@@ -51,9 +51,16 @@ export default {
 
   computed: {
     ...mapState(['partIndex', 'cardIndex', 'showCard']),
+    ...mapGetters(['currentCard']),
     cardContentData () {
       return this.$store.state.pageParts[this.partIndex].cards[this.cardIndex]
     }
+  },
+
+  created () {
+    document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
+    document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
+    document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)
   },
 
   methods: {

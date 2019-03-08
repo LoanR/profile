@@ -27,8 +27,8 @@ export default {
     &:hover::after {
       background: linear-gradient(
         0.25turn, $dark-color,
-        $primary-color 20%,
-        $primary-color 80%,
+        var(--primary-color) 20%,
+        var(--primary-color) 80%,
         $dark-color);
       opacity: 0.4;
     }
@@ -36,8 +36,8 @@ export default {
     &.router-link-exact-active::after {
       background: linear-gradient(
         0.25turn, $dark-color,
-        $primary-color 20%,
-        $primary-color 80%,
+        var(--primary-color) 20%,
+        var(--primary-color) 80%,
         $dark-color);
       opacity: 1;
     }

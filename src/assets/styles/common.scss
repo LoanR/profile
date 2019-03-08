@@ -2,6 +2,12 @@
 @import 'fonts.scss';
 @import 'transitions.scss';
 
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --light-secondary-color: #{lighten($secondary-color, 30%)};
+}
+
 html {
   margin: 0px;
   height: 100%;
@@ -22,27 +28,30 @@ html {
 
     h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0.5rem;
-      color: $primary-color;
+      transition: all $t-duration $t-timing-function;
+      color: var(--primary-color);
     }
 
     p {
 
       strong {
-        color: $secondary-color;
+        transition: all $t-duration $t-timing-function;
+        color: var(--secondary-color);
       }
 
       em {
-        color: lighten($secondary-color, 30%);
+        transition: all $t-duration $t-timing-function;
+        color: var(--light-secondary-color);
       }
 
       a {
         cursor: pointer;
-        box-shadow: inset 0 -1px $secondary-color;
+        box-shadow: inset 0 -1px var(--secondary-color);
         transition: all $t-duration $t-timing-function;
 
         &:hover, &.active-mutation-link {
           color: $light-color;
-          box-shadow: inset 0 -2rem $secondary-color;
+          box-shadow: inset 0 -2rem var(--secondary-color);
         }
       }
     }

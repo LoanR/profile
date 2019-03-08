@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import BoardComponent from '../components/board/BoardComponent.vue'
 import MainNavigationComponent from '../components/main_navigation/MainNavigationComponent.vue'
 import SecondaryNavigationComponent from '../components/secondary_navigation/SecondaryNavigationComponent.vue'
@@ -31,6 +32,10 @@ export default {
 
   props: { rawDatas: { type: Array, required: true } },
 
+  computed: {
+    ...mapGetters(['currentCard'])
+  },
+
   watch: {
     $route (to, from) {
       this.$store.commit('setPageContent', this.rawDatas)
@@ -39,6 +44,9 @@ export default {
       this.$store.commit('hideBoard')
       this.$store.commit('hideCard')
       this.$store.commit('hidePartLinks')
+      document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
+      document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
+      document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)
     }
   },
 

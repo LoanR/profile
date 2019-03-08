@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   props: {
@@ -21,7 +21,8 @@ export default {
   },
 
   computed: {
-    ...mapState(['cardIndex'])
+    ...mapState(['cardIndex']),
+    ...mapGetters(['currentCard'])
   },
 
   methods: {
@@ -29,6 +30,9 @@ export default {
       if (this.index !== this.cardIndex) {
         this.$store.commit('hideCard')
         this.$store.commit('setDisplayedCardIndex', this.index)
+        document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
+        document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
+        document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)
       }
     }
   }

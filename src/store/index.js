@@ -41,7 +41,14 @@ const store = new Vuex.Store({
       state.showPartLinks = true
     }
   },
-  actions: {}
+  getters: {
+    currentPagePart: state => {
+      return state.pageParts[state.partIndex]
+    },
+    currentCard: state => {
+      return state.pageParts[state.partIndex].cards[state.cardIndex]
+    }
+  }
 })
 
 export default store

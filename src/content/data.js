@@ -8,6 +8,9 @@ export const HOME_DATA = {
       cardSelectionTitle: '',
       cards: [
         {
+          primaryColor: '',
+          secondaryColor: '',
+          lightSecondaryColor: '',
           selectionName: '',
           title: {
             tag: 'h1',
@@ -49,6 +52,9 @@ export const PAGES_DATA = [
         cardSelectionTitle: '',
         cards: [
           {
+            primaryColor: 'pink',
+            secondaryColor: 'blue',
+            lightSecondaryColor: 'cyan',
             selectionName: '',
             title: {
               tag: 'h1',
@@ -82,6 +88,9 @@ export const PAGES_DATA = [
         cardSelectionTitle: 'Top albums !',
         cards: [
           {
+            primaryColor: 'yellow',
+            secondaryColor: 'green',
+            lightSecondaryColor: 'lime',
             selectionName: 'Portishead',
             title: {
               tag: 'h1',
@@ -92,6 +101,9 @@ export const PAGES_DATA = [
             iconPath: 'https://img.discogs.com/-Fwk7Ivh5syjL0TXicCBigFXRx8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1319919-1215840361.jpeg.jpg'
           },
           {
+            primaryColor: 'red',
+            secondaryColor: 'orange',
+            lightSecondaryColor: 'yellow',
             selectionName: 'Radiohead',
             title: {
               tag: 'h1',
@@ -102,6 +114,9 @@ export const PAGES_DATA = [
             iconPath: 'https://img.discogs.com/JTh2dRSnfa_dk2KYY5WCbR4ufy8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-86729-1146733406.jpeg.jpg'
           },
           {
+            primaryColor: '',
+            secondaryColor: '',
+            lightSecondaryColor: '',
             selectionName: 'Ghostpoet',
             title: {
               tag: 'h1',
@@ -141,6 +156,9 @@ export const PAGES_DATA = [
         cardSelectionTitle: '',
         cards: [
           {
+            primaryColor: 'yellow',
+            secondaryColor: 'purple',
+            lightSecondaryColor: 'pink',
             selectionName: '',
             title: {
               tag: 'h1',
@@ -174,12 +192,15 @@ export const PAGES_DATA = [
         cardSelectionTitle: '',
         cards: [
           {
+            primaryColor: '',
+            secondaryColor: '',
+            lightSecondaryColor: '',
             selectionName: '',
             title: {
               tag: 'h1',
               content: 'Formation'
             },
-            insert: '<p>Je suis allé à l\'école</p>',
+            insert: '<p>Je suis allé à l\'école sans couleurs</p>',
             bgPath: 'https://img.discogs.com/hLvgm7J6qvo8TUYMQvH274oXfbI=/600x353/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-140203-1415800442-4095.jpeg.jpg',
             iconPath: 'https://img.discogs.com/pU62yLqGpzDbKuyCb3HK90FeE8k=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6260212-1415012248-8601.jpeg.jpg'
           }
@@ -213,6 +234,9 @@ export const PAGES_DATA = [
         cardSelectionTitle: '',
         cards: [
           {
+            primaryColor: 'aqua',
+            secondaryColor: 'olive',
+            lightSecondaryColor: 'springgreen',
             selectionName: '',
             title: {
               tag: 'h1',
