@@ -6,11 +6,11 @@ import { HOME_DATA, PAGES_DATA } from '../content/data.js'
 
 Vue.use(VueRouter)
 
-function formatRoute (page, i) {
-  return { path: page.path, component: SinglePage, props: { rawDatas: page.rawDatas }, meta: { depth: i } }
+function formatRoute (page) {
+  return { path: page.path, component: SinglePage, props: { pageParts: page.pageParts } }
 }
 
-const routes = [...[HOME_DATA], ...PAGES_DATA].map((page, i) => formatRoute(page, i))
+const routes = [...[HOME_DATA], ...PAGES_DATA].map(page => formatRoute(page))
 
 export default new VueRouter({
   routes
