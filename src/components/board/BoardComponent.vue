@@ -1,10 +1,7 @@
 <template>
   <div id="board">
     <card-component />
-    <transition
-      name="fade-text"
-      @after-leave="showBoardAgain"
-    >
+    <transition name="fade-text">
       <board-content-component
         v-if="showBoard"
       />
@@ -25,12 +22,6 @@ export default {
 
   computed: {
     ...mapState(['showBoard'])
-  },
-
-  methods: {
-    showBoardAgain () {
-      this.$store.commit('displayBoard')
-    }
   }
 }
 </script>
@@ -41,7 +32,7 @@ export default {
 
   #board {
     width: 100%;
-    background-color: transparent;
+    background-color: lighten($dark-color, 3);
     display: flex;
   }
 </style>

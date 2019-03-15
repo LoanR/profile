@@ -6,7 +6,7 @@
     <div class="board-container">
       <transition name="slide">
         <div
-          v-if="rawDatas.length > 1"
+          v-if="pageParts.length > 1"
           class="wrapper"
         >
           <secondary-navigation-component />
@@ -30,7 +30,7 @@ export default {
     'secondary-navigation-component': SecondaryNavigationComponent
   },
 
-  props: { rawDatas: { type: Array, required: true } },
+  props: { pageParts: { type: Array, required: true } },
 
   computed: {
     ...mapGetters(['currentCard'])
@@ -38,12 +38,10 @@ export default {
 
   watch: {
     $route (to, from) {
-      this.$store.commit('setPageContent', this.rawDatas)
+      this.$store.commit('setPageContent', this.pageParts)
       this.$store.commit('setDisplayedPartIndex', 0)
       this.$store.commit('setDisplayedCardIndex', 0)
-      this.$store.commit('hideBoard')
-      this.$store.commit('hideCard')
-      this.$store.commit('hidePartLinks')
+      this.$store.dispatch('hideFromMainMenuClick')
       document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
       document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
       document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)
@@ -51,7 +49,7 @@ export default {
   },
 
   created () {
-    this.$store.commit('setPageContent', this.rawDatas)
+    this.$store.commit('setPageContent', this.pageParts)
   }
 }
 </script>

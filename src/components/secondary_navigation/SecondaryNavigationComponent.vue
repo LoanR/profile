@@ -1,17 +1,19 @@
 <template>
   <nav id="secondary-navigation">
-    <ul>
-      <li
-        v-for="(link, i) in subParts"
-        :key="i"
-      >
-        <secondary-navigation-link-component
-          :link="link"
-          :index="i"
-          :is-selected="partIndex == i"
-        />
-      </li>
-    </ul>
+    <transition name="swap">
+      <ul v-if="showPartLinks">
+        <li
+          v-for="(link, i) in subParts"
+          :key="link.title"
+        >
+          <secondary-navigation-link-component
+            :link="link"
+            :index="i"
+            :is-selected="partIndex == i"
+          />
+        </li>
+      </ul>
+    </transition>
   </nav>
 </template>
 
@@ -25,7 +27,7 @@ export default {
   },
 
   computed: {
-    ...mapState(['partIndex']),
+    ...mapState(['partIndex', 'showPartLinks']),
     subParts () {
       return this.$store.state.pageParts.map(part => {
         return { iconPath: part.subNavIconPath, title: part.subNavTitle }
@@ -36,6 +38,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vue_elem_transition.scss';
+
   #secondary-navigation {
     background-color: transparent;
     background-repeat: repeat-y;

@@ -4,11 +4,8 @@
     :class="{ 'active-secondary-tab': isSelected }"
     @click="selectSubPart"
   >
-    <transition
-      name="fade-icon"
-      @after-leave="showLinkAgain"
-    >
-      <div v-if="showPartLinks">
+    <transition name="fade-icon">
+      <div>
         <img
           :src="link.iconPath"
           :alt="link.title"
@@ -41,17 +38,13 @@ export default {
   methods: {
     selectSubPart () {
       if (this.index !== this.partIndex) {
-        this.$store.commit('hideBoard')
-        this.$store.commit('hideCard')
+        this.$store.dispatch('hideFromSecondaryMenuClick')
         this.$store.commit('setDisplayedCardIndex', 0)
         this.$store.commit('setDisplayedPartIndex', this.index)
         document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
         document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
         document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)
       }
-    },
-    showLinkAgain () {
-      this.$store.commit('displayPartLinks')
     }
   }
 }
@@ -83,17 +76,30 @@ export default {
     position: relative;
     display: block;
 
-    img {
-      width: 30px;
+    div {
       height: 30px;
-      filter: grayscale(1) contrast(50%);
-      transition: all $t-duration $t-timing-function;
-      display: block;
-    }
+      width: 30px;
 
-    span {
-      transition: all $t-duration $t-timing-function;
-      color: transparent;
+      img {
+        max-width: 30px;
+        max-height: 30px;
+        filter: grayscale(1) contrast(50%);
+        transition: all $t-duration $t-timing-function;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      span {
+        transition: all $t-duration $t-timing-function;
+        color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     &:hover {
@@ -112,13 +118,6 @@ export default {
       img {
         filter: grayscale(0) contrast(1);
       }
-    }
-
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 </style>

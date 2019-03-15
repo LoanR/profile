@@ -2,7 +2,8 @@
 
 .fade-img-enter-active, .fade-img-leave-active,
 .fade-icon-enter-active, .fade-icon-leave-active,
-.fade-text-enter-active, .fade-text-leave-active {
+.fade-text-enter-active, .fade-text-leave-active,
+.swap-enter-active, .swap-leave-active {
   transition: all calc(#{$t-duration} / 2) $t-timing-function;
 }
 
@@ -26,4 +27,9 @@
 .fade-icon-enter-to, .fade-icon-leave {
   filter: blur(0);
   opacity: 1;
+}
+
+.swap-enter, .swap-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
 }

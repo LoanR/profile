@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 import ReadableContentComponent from './ReadableContentComponent.vue'
 import CardMutationLinksComponent from './CardMutationLinksComponent.vue'
 
@@ -23,12 +23,9 @@ export default {
   },
 
   computed: {
-    ...mapState(['pageParts', 'partIndex']),
-    currentPagePart () {
-      return this.pageParts[this.partIndex]
-    },
+    ...mapGetters(['currentPagePart']),
     boardContentData () {
-      return this.currentPagePart.descriptions
+      return this.currentPagePart.boardSections
     }
   }
 }

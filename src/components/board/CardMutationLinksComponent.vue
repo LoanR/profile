@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import CardMutationLinkComponent from './CardMutationLinkComponent.vue'
 
 export default {
@@ -25,10 +25,8 @@ export default {
   },
 
   computed: {
-    ...mapState(['pageParts', 'partIndex', 'cardIndex']),
-    currentPagePart () {
-      return this.pageParts[this.partIndex]
-    },
+    ...mapState(['cardIndex']),
+    ...mapGetters(['currentPagePart']),
     cardChoices () {
       return this.currentPagePart.cards.map(card => card.selectionName)
     },

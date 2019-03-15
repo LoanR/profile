@@ -65,7 +65,7 @@ export default {
 
   methods: {
     showCardAgain () {
-      this.$store.commit('displayCard')
+      this.$store.dispatch('displayEverything')
     }
   }
 }

@@ -41,6 +41,22 @@ const store = new Vuex.Store({
       state.showPartLinks = true
     }
   },
+  actions: {
+    hideFromMainMenuClick (context) {
+      context.commit('hideBoard')
+      context.commit('hideCard')
+      context.commit('hidePartLinks')
+    },
+    hideFromSecondaryMenuClick (context) {
+      context.commit('hideBoard')
+      context.commit('hideCard')
+    },
+    displayEverything (context) {
+      context.commit('displayBoard')
+      context.commit('displayCard')
+      context.commit('displayPartLinks')
+    }
+  },
   getters: {
     currentPagePart: state => {
       return state.pageParts[state.partIndex]
