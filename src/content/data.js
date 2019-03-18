@@ -543,14 +543,14 @@ export const PAGES_DATA = [
             primaryColor: '',
             secondaryColor: '',
             lightSecondaryColor: '',
-            selectionName: 'Portishead',
+            selectionName: '',
             title: {
               tag: 'h1',
               content: 'Titre'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'compose-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/music_pic.png'
           }
         ],
@@ -586,7 +586,7 @@ export const PAGES_DATA = [
               content: 'LUX'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'lux-card-component',
             bgPath: 'https://img.discogs.com/hLvgm7J6qvo8TUYMQvH274oXfbI=/600x353/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-140203-1415800442-4095.jpeg.jpg',
             iconPath: 'https://img.discogs.com/pU62yLqGpzDbKuyCb3HK90FeE8k=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6260212-1415012248-8601.jpeg.jpg'
           },
@@ -600,7 +600,7 @@ export const PAGES_DATA = [
               content: 'Kid A'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'kida-card-component',
             bgPath: 'https://img.discogs.com/omECGW3Dpn8yf8OT-_TXLsw-lq4=/600x400/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-3840-1462781416-2615.jpeg.jpg',
             iconPath: 'https://img.discogs.com/JTh2dRSnfa_dk2KYY5WCbR4ufy8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-86729-1146733406.jpeg.jpg'
           },
@@ -614,7 +614,7 @@ export const PAGES_DATA = [
               content: 'Some Say I So I Say Light'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'some-card-component',
             bgPath: 'https://img.discogs.com/3wXdLvioHyMrRU7OyDo-ZoL1C5s=/600x450/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-1835598-1387715897-5247.jpeg.jpg',
             iconPath: 'https://img.discogs.com/Bu0VkUatXk0rvWEzJYDUXtF-Dfo=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5879034-1405233032-4477.jpeg.jpg'
           }
@@ -644,8 +644,8 @@ export const PAGES_DATA = [
               content: 'Flowers for Algernon'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'flowers-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/book_pic.png'
           },
           {
@@ -658,8 +658,8 @@ export const PAGES_DATA = [
               content: 'Le Passage'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'passage-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/book_pic.png'
           }
         ],
@@ -682,14 +682,14 @@ export const PAGES_DATA = [
             primaryColor: '',
             secondaryColor: '',
             lightSecondaryColor: '',
-            selectionName: 'Bladerunner 2048',
+            selectionName: 'Bladerunner 2049',
             title: {
               tag: 'h1',
-              content: 'Bladerunner 2048'
+              content: 'Bladerunner 2049'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'blade-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/ticket_pic.png'
           },
           {
@@ -702,8 +702,8 @@ export const PAGES_DATA = [
               content: 'Le Château dans le Ciel'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'castle-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/ticket_pic.png'
           }
         ],
@@ -732,8 +732,8 @@ export const PAGES_DATA = [
               content: 'Faire du sport parfois'
             },
             precision: '',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
-            bgPath: 'https://img.discogs.com/IGefZ50zVVdQE073dASqDY6qvY4=/481x348/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2774-1209487724.jpeg.jpg',
+            component: 'sport-card-component',
+            bgPath: '',
             iconPath: 'static/thumbnails/sport_pic.png'
           }
         ],
@@ -750,10 +750,3 @@ export const PAGES_DATA = [
     ]
   }
 ]
-
-// mutationLinks: [
-//   {
-//     content: '...Like Clockwork',
-//     analyse: '<p> Cet album déchire de ouf.</p>'
-//   }
-// ]

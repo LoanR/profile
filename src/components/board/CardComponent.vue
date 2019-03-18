@@ -60,6 +60,15 @@ import MedenvCardComponent from '../specific_content/cards/formations/MedenvCard
 import LbioCardComponent from '../specific_content/cards/formations/LbioCard.vue'
 import AstroCardComponent from '../specific_content/cards/formations/AstroCard.vue'
 import GbCardComponent from '../specific_content/cards/formations/GbCard.vue'
+import ComposeCardComponent from '../specific_content/cards/hobbies/ComposeCard.vue'
+import LuxCardComponent from '../specific_content/cards/hobbies/LuxCard.vue'
+import KidaCardComponent from '../specific_content/cards/hobbies/KidaCard.vue'
+import SomeCardComponent from '../specific_content/cards/hobbies/SomeCard.vue'
+import FlowersCardComponent from '../specific_content/cards/hobbies/FlowersCard.vue'
+import PassageCardComponent from '../specific_content/cards/hobbies/PassageCard.vue'
+import BladeCardComponent from '../specific_content/cards/hobbies/BladeCard.vue'
+import CastleCardComponent from '../specific_content/cards/hobbies/CastleCard.vue'
+import SportCardComponent from '../specific_content/cards/hobbies/SportCard.vue'
 
 export default {
   components: {
@@ -80,7 +89,16 @@ export default {
     'medenv-card-component': MedenvCardComponent,
     'lbio-card-component': LbioCardComponent,
     'astro-card-component': AstroCardComponent,
-    'gb-card-component': GbCardComponent
+    'gb-card-component': GbCardComponent,
+    'compose-card-component': ComposeCardComponent,
+    'lux-card-component': LuxCardComponent,
+    'kida-card-component': KidaCardComponent,
+    'some-card-component': SomeCardComponent,
+    'flowers-card-component': FlowersCardComponent,
+    'passage-card-component': PassageCardComponent,
+    'blade-card-component': BladeCardComponent,
+    'castle-card-component': CastleCardComponent,
+    'sport-card-component': SportCardComponent
   },
 
   computed: {
