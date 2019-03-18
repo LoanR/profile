@@ -321,7 +321,7 @@ export const PAGES_DATA = [
               content: 'Web concepteur'
             },
             precision: '2018',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'cesi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cesi_pic.png'
           }
@@ -358,7 +358,7 @@ export const PAGES_DATA = [
               content: 'Développeur web fullstack'
             },
             precision: '2016',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'wagon-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/wg_pic.png'
           }
@@ -395,7 +395,7 @@ export const PAGES_DATA = [
               content: 'Master Médiation en environnement'
             },
             precision: '2012',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'medenv-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/fsamu_pic.png'
           }
@@ -432,7 +432,7 @@ export const PAGES_DATA = [
               content: 'Licence Biologie Évolution Evironnement'
             },
             precision: '2010',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'lbio-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/amu_pic.png'
           }
@@ -469,7 +469,7 @@ export const PAGES_DATA = [
               content: 'Astronomie & astrophysique'
             },
             precision: '2010',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'astro-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/uo_pic.png'
           }
@@ -506,7 +506,7 @@ export const PAGES_DATA = [
               content: "DUT génie biologique, génie de l'environnement"
             },
             precision: '2009',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'gb-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/un_pic.png'
           }

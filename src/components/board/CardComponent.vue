@@ -54,6 +54,12 @@ import PlasciCardComponent from '../specific_content/cards/experiences/PlasciCar
 import DebsCardComponent from '../specific_content/cards/experiences/DebsCard.vue'
 import RobinsCardComponent from '../specific_content/cards/experiences/RobinsCard.vue'
 import MondCardComponent from '../specific_content/cards/experiences/MondCard.vue'
+import CesiCardComponent from '../specific_content/cards/formations/CesiCard.vue'
+import WagonCardComponent from '../specific_content/cards/formations/WagonCard.vue'
+import MedenvCardComponent from '../specific_content/cards/formations/MedenvCard.vue'
+import LbioCardComponent from '../specific_content/cards/formations/LbioCard.vue'
+import AstroCardComponent from '../specific_content/cards/formations/AstroCard.vue'
+import GbCardComponent from '../specific_content/cards/formations/GbCard.vue'
 
 export default {
   components: {
@@ -68,7 +74,13 @@ export default {
     'plasci-card-component': PlasciCardComponent,
     'debs-card-component': DebsCardComponent,
     'robins-card-component': RobinsCardComponent,
-    'mond-card-component': MondCardComponent
+    'mond-card-component': MondCardComponent,
+    'cesi-card-component': CesiCardComponent,
+    'wagon-card-component': WagonCardComponent,
+    'medenv-card-component': MedenvCardComponent,
+    'lbio-card-component': LbioCardComponent,
+    'astro-card-component': AstroCardComponent,
+    'gb-card-component': GbCardComponent
   },
 
   computed: {
