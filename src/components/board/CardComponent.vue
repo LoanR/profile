@@ -8,7 +8,7 @@
         <div
           v-if="showCard"
           class="background-img"
-          :style="{ backgroundImage: 'url(\'' + cardContentData.bgPath + '\')' }"
+          :style="{ backgroundImage: 'url(\'' + currentCard.bgPath + '\')' }"
           alt="bg"
         />
       </transition>
@@ -18,9 +18,9 @@
         <transition
           name="fade-text"
         >
-          <readable-content-component
+          <component
+            :is="cardContentComponent"
             v-if="showCard"
-            :part-content="cardContentData"
           />
         </transition>
       </div>
@@ -32,7 +32,7 @@
         <img
           v-if="showCard"
           class="thumbnail"
-          :src="cardContentData.iconPath"
+          :src="currentCard.iconPath"
           alt="icon"
         >
       </transition>
@@ -43,17 +43,39 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
 import ReadableContentComponent from './ReadableContentComponent.vue'
+import ProfileCardComponent from '../specific_content/cards/ProfileCard.vue'
+import ActiwineCardComponent from '../specific_content/cards/experiences/ActiwineCard.vue'
+import TypetimeCardComponent from '../specific_content/cards/experiences/TypetimeCard.vue'
+import CavesCardComponent from '../specific_content/cards/experiences/CavesCard.vue'
+import CdmCardComponent from '../specific_content/cards/experiences/CdmCard.vue'
+import RadsiCardComponent from '../specific_content/cards/experiences/RadsiCard.vue'
+import SemCardComponent from '../specific_content/cards/experiences/SemCard.vue'
+import PlasciCardComponent from '../specific_content/cards/experiences/PlasciCard.vue'
+import DebsCardComponent from '../specific_content/cards/experiences/DebsCard.vue'
+import RobinsCardComponent from '../specific_content/cards/experiences/RobinsCard.vue'
+import MondCardComponent from '../specific_content/cards/experiences/MondCard.vue'
 
 export default {
   components: {
-    'readable-content-component': ReadableContentComponent
+    'readable-content-component': ReadableContentComponent,
+    'profile-card-component': ProfileCardComponent,
+    'actiwine-card-component': ActiwineCardComponent,
+    'typetime-card-component': TypetimeCardComponent,
+    'caves-card-component': CavesCardComponent,
+    'cdm-card-component': CdmCardComponent,
+    'radsi-card-component': RadsiCardComponent,
+    'sem-card-component': SemCardComponent,
+    'plasci-card-component': PlasciCardComponent,
+    'debs-card-component': DebsCardComponent,
+    'robins-card-component': RobinsCardComponent,
+    'mond-card-component': MondCardComponent
   },
 
   computed: {
-    ...mapState(['partIndex', 'cardIndex', 'showCard']),
+    ...mapState(['showCard']),
     ...mapGetters(['currentCard']),
-    cardContentData () {
-      return this.$store.state.pageParts[this.partIndex].cards[this.cardIndex]
+    cardContentComponent () {
+      return this.currentCard.component
     }
   },
 
@@ -104,7 +126,7 @@ export default {
       width: 100%;
       height: 50%;
       display: inline-block;
-      padding-top: 25px;
+      padding-top: 30px;
 
       .card-presentation {
         padding: 0 1rem;

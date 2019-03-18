@@ -17,12 +17,7 @@ export const HOME_DATA = {
             content: 'Developpeur web'
           },
           precision: '',
-          insert:
-            '<p><a href="https://github.com/LoanR" target="_blank"><i class="fab fa-github"></i> github.com/LoanR</a></p>' +
-            "<p>Après plusieurs années d'études en <em>sciences de l'environnement</em> et un passé de <em>médiateur scientifique</em>, j'exerce aujourd'hui le métier de <strong>développeur web</strong>.</p>" +
-            '<div class="ul-wrapper"><ul><li><span class="color-hover"><img class="inline-icon" src="static/icons/js-icon.png" alt="icon"> JS</span> • <span class="color-hover"><img class="inline-icon" src="static/icons/sass-icon.png" alt="icon"> SCSS</span> • <span class="color-hover"><img class="inline-icon" src="static/icons/vuejs-icon.png" alt="icon"> Vue.js</span></li>' +
-            '<li><span class="color-hover"><img class="inline-icon" src="static/icons/python-icon.png" alt="icon"> Python</span> • <span class="color-hover"><img class="inline-icon" src="static/icons/django-icon.png" alt="icon"> django</span></li>' +
-            '<li><span class="color-hover"><img class="inline-icon" src="static/icons/ruby-icon.png" alt="icon"> Ruby</span> • <span class="color-hover"><img class="inline-icon" src="static/icons/ror-icon.png" alt="icon"> Ruby on Rails</span></li></ul></div>',
+          component: 'profile-card-component',
           bgPath: 'https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif',
           iconPath: 'static/thumbnails/lr_pic.jpg'
         }
@@ -67,7 +62,7 @@ export const PAGES_DATA = [
               content: 'Actiwine'
             },
             precision: "Octobre 2016 - aujourd'hui",
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'actiwine-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/aw_pic.jpg'
           }
@@ -104,7 +99,7 @@ export const PAGES_DATA = [
               content: 'Typetime'
             },
             precision: 'Projet perso',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'typetime-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/tyti_pic.png'
           }
@@ -141,7 +136,7 @@ export const PAGES_DATA = [
               content: 'Doors & Dragons'
             },
             precision: 'Projet perso',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'caves-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/dd_pic.png'
           }
@@ -166,7 +161,7 @@ export const PAGES_DATA = [
       {
         subNavIconPath: 'static/thumbnails/si_pic.png',
         subNavTitle: 'solidarité int.',
-        cardSelectionTitle: 'Différentes expériences',
+        cardSelectionTitle: 'Quelques missions',
         cards: [
           {
             primaryColor: '#E98535',
@@ -178,7 +173,7 @@ export const PAGES_DATA = [
               content: "Cool'eurs du Monde"
             },
             precision: 'Automne 2013',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'cdm-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cm_pic.png'
           },
@@ -192,7 +187,7 @@ export const PAGES_DATA = [
               content: 'RADSI'
             },
             precision: 'Hiver - été 2013',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'radsi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/radsi_pic.png'
           },
@@ -206,7 +201,7 @@ export const PAGES_DATA = [
               content: 'Projet SEM'
             },
             precision: 'Été 2013',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'sem-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/ps_pic.png'
           }
@@ -231,7 +226,7 @@ export const PAGES_DATA = [
       {
         subNavIconPath: 'static/thumbnails/ed_pic.png',
         subNavTitle: 'éducation populaire',
-        cardSelectionTitle: 'Quelques missions',
+        cardSelectionTitle: 'Différentes expériences',
         cards: [
           {
             primaryColor: '#1462AD',
@@ -243,7 +238,7 @@ export const PAGES_DATA = [
               content: 'Planète Sciences'
             },
             precision: 'Hiver - été 2012',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'plasci-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/plsc_pic.png'
           },
@@ -256,7 +251,7 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Les Petits Débrouillards'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'debs-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/pdeb_pic.png'
           },
@@ -269,7 +264,7 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Les Robins des Villes'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'robins-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/lrv_pic.png'
           },
@@ -283,7 +278,7 @@ export const PAGES_DATA = [
               content: 'Le Mondial des Cultures de Drummondville'
             },
             precision: 'Été 2009',
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>',
+            component: 'mond-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/mc_pic.png'
           }
