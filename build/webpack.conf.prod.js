@@ -37,7 +37,7 @@ module.exports = merge(baseConfig, {
     }
   },
   output: {
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../docs')
   },
 
   module: {
@@ -57,7 +57,7 @@ module.exports = merge(baseConfig, {
   plugins: [
     new CopyWebpackPlugin([{
       from: resolve('static'),
-      to: resolve('dist/static'),
+      to: resolve('docs/static'),
       toType: 'dir'
     }]),
     new MiniCssExtractPlugin({
