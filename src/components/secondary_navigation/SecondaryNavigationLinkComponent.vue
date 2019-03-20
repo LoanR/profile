@@ -98,6 +98,10 @@ export default {
       }
     }
 
+    &:focus {
+      outline: 0;
+    }
+
     &:hover {
       span {
         color: $light-color;
