@@ -1,0 +1,62 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'transitions.scss';
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --light-secondary-color: #{lighten($secondary-color, 30%)};
+}
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+
+  body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-color;
+    font-family: $content-font;
+    color: $light-color;
+    font-size: small;
+
+    h1, h2, h3, h4, h5, h6, nav {
+      font-family: $title-font;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0.5rem;
+      transition: all $t-duration $t-timing-function;
+      color: var(--primary-color);
+    }
+
+    p {
+
+      strong {
+        transition: all $t-duration $t-timing-function;
+        color: var(--secondary-color);
+      }
+
+      em {
+        transition: all $t-duration $t-timing-function;
+        color: var(--light-secondary-color);
+      }
+
+      a {
+        cursor: pointer;
+        box-shadow: inset 0 -1px var(--secondary-color);
+        transition: all $t-duration $t-timing-function;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover, &.active-mutation-link {
+          color: $light-color;
+          box-shadow: inset 0 -2rem var(--secondary-color);
+        }
+      }
+    }
+
+  }
+}

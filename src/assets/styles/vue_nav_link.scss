@@ -1,0 +1,23 @@
+@import 'transitions.scss';
+@import 'colors.scss';
+
+div {
+  padding: 0 5px 0;
+
+  a {
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    position: relative;
+    color: darken($light-color, 40%);
+    transition: all $t-duration $t-timing-function;
+
+    &:hover {
+      color: darken($light-color, 20%)
+    }
+
+    &.router-link-exact-active, &.router-link-exact-active:hover {
+      color: $light-color;
+    }
+  }
+}
