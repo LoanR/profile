@@ -13,8 +13,11 @@
     </template>
     <template slot="detail">
       <period-component
-        start="octobre 2016"
-        end="aujourd'hui"
+        :start-display="currentCard.startDisplay"
+        :end-display="currentCard.endDisplay"
+        :show-duration="currentCard.showDuration"
+        :start="currentCard.start"
+        :end="currentCard.end"
       />
     </template>
     <template slot="content">
@@ -43,6 +46,10 @@ export default {
     'readable-content-component': ReadableContentComponent,
     'title-component': TitleComponent,
     'period-component': PeriodComponent
+  },
+
+  props: {
+    currentCard: { type: Object, required: true }
   }
 }
 </script>

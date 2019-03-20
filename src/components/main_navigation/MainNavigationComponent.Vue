@@ -27,7 +27,7 @@
 <script>
 import HomeNavigationLinkComponent from './HomeNavigationLinkComponent.vue'
 import SectionNavigationLinkComponent from './SectionNavigationLinkComponent.vue'
-import { HOME_DATA, PAGES_DATA } from '../../content/data.js'
+import { HOME_DATA, PAGES_DATA } from '../../core/data.js'
 
 export default {
   components: {

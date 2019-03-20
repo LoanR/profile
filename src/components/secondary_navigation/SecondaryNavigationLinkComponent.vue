@@ -31,10 +31,6 @@ export default {
     ...mapGetters(['currentCard'])
   },
 
-  created () {
-    this.showLinkAgain()
-  },
-
   methods: {
     selectSubPart () {
       if (this.index !== this.partIndex) {

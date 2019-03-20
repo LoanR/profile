@@ -21,6 +21,7 @@
           <component
             :is="cardContentComponent"
             v-if="showCard"
+            :current-card="currentCard"
           />
         </transition>
       </div>

@@ -38,10 +38,10 @@ export default {
 
   watch: {
     $route (to, from) {
-      this.$store.commit('setPageContent', this.pageParts)
+      this.$store.dispatch('hideFromMainMenuClick')
       this.$store.commit('setDisplayedPartIndex', 0)
       this.$store.commit('setDisplayedCardIndex', 0)
-      this.$store.dispatch('hideFromMainMenuClick')
+      this.$store.commit('setPageContent', this.pageParts)
       document.body.style.setProperty('--primary-color', this.currentCard.primaryColor)
       document.body.style.setProperty('--secondary-color', this.currentCard.secondaryColor)
       document.body.style.setProperty('--light-secondary-color', this.currentCard.lightSecondaryColor)

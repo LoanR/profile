@@ -8,7 +8,13 @@
       </title-component>
     </template>
     <template slot="content">
-      <p>
+      <p class="identity">
+        <i class="fas fa-hourglass-half" />
+        {{ age }} ans
+        <br>
+        <i class="fas fa-home" />
+        Bordeaux
+        <br>
         <a
           href="https://github.com/LoanR"
           target="_blank"
@@ -107,6 +113,7 @@
 </template>
 
 <script>
+import { getDuration } from '../../../core/duration.js'
 import ReadableContentComponent from '../../board/ReadableContentComponent.vue'
 import TitleComponent from '../../micro_slots/TitleComponent.vue'
 
@@ -114,6 +121,12 @@ export default {
   components: {
     'readable-content-component': ReadableContentComponent,
     'title-component': TitleComponent
+  },
+
+  computed: {
+    age () {
+      return getDuration('1988-06-23', 'today', false)[0]
+    }
   }
 }
 </script>
@@ -126,6 +139,14 @@ export default {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .identity {
+    margin-top: 0;
   }
 
   .center-content {

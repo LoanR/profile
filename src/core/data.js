@@ -61,7 +61,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Actiwine'
             },
-            precision: "Octobre 2016 - aujourd'hui",
+            startDisplay: 'octobre 2016',
+            endDisplay: "aujourd'hui",
+            showDuration: true,
+            start: '2016-10',
+            end: 'today',
             component: 'actiwine-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/aw_pic.jpg'
@@ -98,7 +102,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Typetime'
             },
-            precision: 'Projet perso',
+            startDisplay: 'projet perso',
+            endDisplay: '',
+            showDuration: true,
+            start: '',
+            end: '',
             component: 'typetime-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/tyti_pic.png'
@@ -135,7 +143,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Doors & Dragons'
             },
-            precision: 'Projet perso',
+            startDisplay: 'projet perso',
+            endDisplay: '',
+            showDuration: true,
+            start: '',
+            end: '',
             component: 'caves-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/dd_pic.png'
@@ -172,7 +184,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: "Cool'eurs du Monde"
             },
-            precision: 'Automne 2013',
+            startDisplay: 'août 2013',
+            endDisplay: 'novembre 2013',
+            showDuration: true,
+            start: '2013-08',
+            end: '2013-11',
             component: 'cdm-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cm_pic.png'
@@ -186,7 +202,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'RADSI'
             },
-            precision: 'Hiver - été 2013',
+            startDisplay: 'janvier 2013',
+            endDisplay: 'juillet 2013',
+            showDuration: true,
+            start: '2013-01',
+            end: '2013-07',
             component: 'radsi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/radsi_pic.png'
@@ -200,7 +220,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Projet SEM'
             },
-            precision: 'Été 2013',
+            startDisplay: 'mars 2013',
+            endDisplay: 'octobre 2013',
+            showDuration: true,
+            start: '2013-03',
+            end: '2013-10',
             component: 'sem-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/ps_pic.png'
@@ -237,7 +261,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Planète Sciences'
             },
-            precision: 'Hiver - été 2012',
+            startDisplay: 'mars 2012',
+            endDisplay: 'août 2012',
+            showDuration: true,
+            start: '2012-03',
+            end: '2012-08',
             component: 'plasci-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/plsc_pic.png'
@@ -277,7 +305,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Le Mondial des Cultures de Drummondville'
             },
-            precision: 'Été 2009',
+            startDisplay: 'juillet 2009',
+            endDisplay: '',
+            showDuration: true,
+            start: '2009-07',
+            end: '2009-08',
             component: 'mond-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/mc_pic.png'
@@ -320,7 +352,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Web concepteur'
             },
-            precision: '2018',
+            startDisplay: 'octobre 2016',
+            endDisplay: 'janvier 2018',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'cesi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cesi_pic.png'
@@ -357,7 +393,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Développeur web fullstack'
             },
-            precision: '2016',
+            startDisplay: 'juillet 2016',
+            endDisplay: 'septembre 2016',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'wagon-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/wg_pic.png'
@@ -394,7 +434,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Master Médiation en environnement'
             },
-            precision: '2012',
+            startDisplay: 'septembre 2010',
+            endDisplay: 'septembre 2012',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'medenv-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/fsamu_pic.png'
@@ -431,7 +475,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Licence Biologie Évolution Evironnement'
             },
-            precision: '2010',
+            startDisplay: 'septembre 2009',
+            endDisplay: 'septembre 2010',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'lbio-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/amu_pic.png'
@@ -468,7 +516,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: 'Astronomie & astrophysique'
             },
-            precision: '2010',
+            startDisplay: 'septembre 2009',
+            endDisplay: 'juin 2010',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'astro-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/uo_pic.png'
@@ -505,7 +557,11 @@ export const PAGES_DATA = [
               tag: 'h1',
               content: "DUT génie biologique, génie de l'environnement"
             },
-            precision: '2009',
+            startDisplay: 'septembre 2007',
+            endDisplay: 'septembre 2009',
+            showDuration: false,
+            start: '',
+            end: '',
             component: 'gb-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/un_pic.png'

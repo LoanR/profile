@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import SinglePage from '../pages/SinglePage.vue'
-import { HOME_DATA, PAGES_DATA } from '../content/data.js'
+import { HOME_DATA, PAGES_DATA } from '../core/data.js'
 
 Vue.use(VueRouter)
 
