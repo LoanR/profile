@@ -3,23 +3,23 @@
     <card-mutation-links-component
       v-if="currentPagePart.cards.length > 1"
     />
-    <readable-content-component
+    <section-selector-component
       v-for="(part, i) in boardContentData"
       :key="i"
-      :part-content="part"
+      :section-content="part"
     />
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import ReadableContentComponent from './ReadableContentComponent.vue'
 import CardMutationLinksComponent from './CardMutationLinksComponent.vue'
+import SectionSelectorComponent from './SectionSelectorComponent.vue'
 
 export default {
   components: {
-    'readable-content-component': ReadableContentComponent,
-    'card-mutation-links-component': CardMutationLinksComponent
+    'card-mutation-links-component': CardMutationLinksComponent,
+    'section-selector-component': SectionSelectorComponent
   },
 
   computed: {

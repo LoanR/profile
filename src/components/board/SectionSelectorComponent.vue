@@ -1,44 +1,42 @@
 <template>
   <readable-content-component>
-    <template slot="title">
-      <title-component :title-tag="currentCard.title.tag">
+    <template
+      v-if="sectionContent.title"
+      slot="title"
+    >
+      <title-component :title-tag="sectionContent.title.tag">
         <template slot="role">
-          {{ currentCard.title.main }}
+          {{ sectionContent.title.main }}
         </template>
         <template
-          v-if="currentCard.title.precision"
+          v-if="sectionContent.title.precision"
           slot="structure"
         >
           <br>
-          {{ currentCard.title.precision }}
+          {{ sectionContent.title.precision }}
         </template>
       </title-component>
     </template>
     <template
-      v-if="currentCard.startDisplay"
+      v-if="startDisplay"
       slot="detail"
     >
       <period-component
-        :start-display="currentCard.startDisplay"
-        :end-display="currentCard.endDisplay"
-        :show-duration="currentCard.showDuration"
-        :start="currentCard.start"
-        :end="currentCard.end"
+        :start-display="startDisplay"
+        :end-display="endDisplay"
+        :show-duration="showDuration"
+        :start="start"
+        :end="end"
       />
     </template>
     <template slot="content">
-      <component
-        :is="cardContentComponent"
-        v-if="showCard"
-        :current-card="currentCard"
-      />
+      <component :is="sectionContent.component" />
     </template>
   </readable-content-component>
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
-import ReadableContentComponent from './ReadableContentComponent.vue'
+import ReadableContentComponent from '../micro_slots/ReadableContentComponent.vue'
 import TitleComponent from '../micro_slots/TitleComponent.vue'
 import PeriodComponent from '../micro_slots/PeriodComponent.vue'
 import ProfileCardComponent from '../specific_content/cards/ProfileCard.vue'
@@ -67,6 +65,7 @@ import PassageCardComponent from '../specific_content/cards/hobbies/PassageCard.
 import BladeCardComponent from '../specific_content/cards/hobbies/BladeCard.vue'
 import CastleCardComponent from '../specific_content/cards/hobbies/CastleCard.vue'
 import SportCardComponent from '../specific_content/cards/hobbies/SportCard.vue'
+import ProfileBoard1Component from '../specific_content/boards/ProfileBoard1.vue'
 
 export default {
   components: {
@@ -98,15 +97,17 @@ export default {
     'passage-card-component': PassageCardComponent,
     'blade-card-component': BladeCardComponent,
     'castle-card-component': CastleCardComponent,
-    'sport-card-component': SportCardComponent
+    'sport-card-component': SportCardComponent,
+    'profile-board-1-component': ProfileBoard1Component
   },
 
-  computed: {
-    ...mapState(['showCard']),
-    ...mapGetters(['currentCard']),
-    cardContentComponent () {
-      return this.currentCard.component
-    }
+  props: {
+    sectionContent: { type: Object, required: true },
+    startDisplay: { type: String, default: null },
+    endDisplay: { type: String, default: null },
+    showDuration: { type: Boolean, default: true },
+    start: { type: String, default: null },
+    end: { type: String, default: null }
   }
 }
 </script>

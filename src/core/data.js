@@ -12,11 +12,13 @@ export const HOME_DATA = {
           secondaryColor: '',
           lightSecondaryColor: '',
           selectionName: '',
-          title: {
-            tag: 'h1',
-            main: 'Developpeur web'
+          section: {
+            title: {
+              tag: 'h1',
+              main: 'Developpeur web'
+            },
+            component: 'profile-card-component'
           },
-          component: 'profile-card-component',
           bgPath: 'https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif',
           iconPath: 'static/thumbnails/lr_pic.jpg'
         }
@@ -25,16 +27,16 @@ export const HOME_DATA = {
         {
           title: {
             tag: 'h2',
-            content: 'Sous titre'
+            main: 'Titre'
           },
-          insert: "<p>Mettre en pratique la logique et la rigueur scientifique, créer à partir d'un langage, c'est ce qui me captive dans ce milieu.</p>"
+          component: 'profile-board-1-component'
         },
         {
           title: {
             tag: 'h2',
-            content: 'Titre'
+            main: 'Titre'
           },
-          insert: '<p>Texte</p>'
+          component: ''
         }
       ]
     }
@@ -56,17 +58,19 @@ export const PAGES_DATA = [
             secondaryColor: '#b4a123',
             lightSecondaryColor: '#e4cf35',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Developpeur Vue.js | django',
-              precision: 'Actiwine'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Developpeur Vue.js | django',
+                precision: 'Actiwine'
+              },
+              component: 'actiwine-card-component'
             },
             startDisplay: 'octobre 2016',
             endDisplay: "aujourd'hui",
             showDuration: true,
             start: '2016-10',
             end: 'today',
-            component: 'actiwine-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/aw_pic.jpg'
           }
@@ -75,16 +79,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -98,16 +102,18 @@ export const PAGES_DATA = [
             secondaryColor: '#143894',
             lightSecondaryColor: '#6376ac',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Typetime'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Typetime'
+              },
+              component: 'typetime-card-component'
             },
             startDisplay: 'projet perso',
             endDisplay: '',
             showDuration: true,
             start: '',
             end: '',
-            component: 'typetime-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/tyti_pic.png'
           }
@@ -116,16 +122,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -139,16 +145,18 @@ export const PAGES_DATA = [
             secondaryColor: '#990000',
             lightSecondaryColor: '#00b401',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Doors & Dragons'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Doors & Dragons'
+              },
+              component: 'caves-card-component'
             },
             startDisplay: 'projet perso',
             endDisplay: '',
             showDuration: true,
             start: '',
             end: '',
-            component: 'caves-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/dd_pic.png'
           }
@@ -157,16 +165,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -180,17 +188,19 @@ export const PAGES_DATA = [
             secondaryColor: '#50AF78',
             lightSecondaryColor: '#A0ADD0',
             selectionName: "Cool'eurs du Monde",
-            title: {
-              tag: 'h1',
-              main: 'Chargé de projet événementiel',
-              precision: "Cool'eurs du Monde"
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Chargé de projet événementiel',
+                precision: "Cool'eurs du Monde"
+              },
+              component: 'cdm-card-component'
             },
             startDisplay: 'août 2013',
             endDisplay: 'novembre 2013',
             showDuration: true,
             start: '2013-08',
             end: '2013-11',
-            component: 'cdm-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cm_pic.png'
           },
@@ -199,17 +209,19 @@ export const PAGES_DATA = [
             secondaryColor: '#F8AB00',
             lightSecondaryColor: '#FFE451',
             selectionName: 'RADSI',
-            title: {
-              tag: 'h1',
-              main: 'Chargé de projet événementiel',
-              precision: 'RADSI'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Chargé de projet événementiel',
+                precision: 'RADSI'
+              },
+              component: 'radsi-card-component'
             },
             startDisplay: 'janvier 2013',
             endDisplay: 'juillet 2013',
             showDuration: true,
             start: '2013-01',
             end: '2013-07',
-            component: 'radsi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/radsi_pic.png'
           },
@@ -218,17 +230,19 @@ export const PAGES_DATA = [
             secondaryColor: '#658633',
             lightSecondaryColor: '#658633',
             selectionName: 'Projet SEM',
-            title: {
-              tag: 'h1',
-              main: 'Bénévolat en chantier international',
-              precision: 'Projet SEM'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Bénévolat en chantier international',
+                precision: 'Projet SEM'
+              },
+              component: 'sem-card-component'
             },
             startDisplay: 'mars 2013',
             endDisplay: 'octobre 2013',
             showDuration: true,
             start: '2013-03',
             end: '2013-10',
-            component: 'sem-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/ps_pic.png'
           }
@@ -237,16 +251,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -260,17 +274,19 @@ export const PAGES_DATA = [
             secondaryColor: '#0099CC',
             lightSecondaryColor: '#F0027F',
             selectionName: 'Planète Sciences',
-            title: {
-              tag: 'h1',
-              main: 'Médiateur en environnement',
-              precision: 'Planète Sciences'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Médiateur en environnement',
+                precision: 'Planète Sciences'
+              },
+              component: 'plasci-card-component'
             },
             startDisplay: 'mars 2012',
             endDisplay: 'août 2012',
             showDuration: true,
             start: '2012-03',
             end: '2012-08',
-            component: 'plasci-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/plsc_pic.png'
           },
@@ -279,12 +295,14 @@ export const PAGES_DATA = [
             secondaryColor: '#00BDF4',
             lightSecondaryColor: '#D8DF20',
             selectionName: 'Les Petits Débrouillards',
-            title: {
-              tag: 'h1',
-              main: 'Animateur scientifique',
-              precision: 'Les Petits Débrouillards'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Animateur scientifique',
+                precision: 'Les Petits Débrouillards'
+              },
+              component: 'debs-card-component'
             },
-            component: 'debs-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/pdeb_pic.png'
           },
@@ -293,12 +311,14 @@ export const PAGES_DATA = [
             secondaryColor: '#FB803F',
             lightSecondaryColor: '#FB803F',
             selectionName: 'Les Robins des Villes',
-            title: {
-              tag: 'h1',
-              main: 'Médiateur risque inondation',
-              precision: 'Les Robins des Villes'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Médiateur risque inondation',
+                precision: 'Les Robins des Villes'
+              },
+              component: 'robins-card-component'
             },
-            component: 'robins-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/lrv_pic.png'
           },
@@ -307,17 +327,19 @@ export const PAGES_DATA = [
             secondaryColor: '#e68a3d',
             lightSecondaryColor: '#C34937',
             selectionName: 'Le Mondial des Cultures de Drummondville',
-            title: {
-              tag: 'h1',
-              main: 'Animateur scientifique',
-              precision: 'Mondial des Cultures de Drummondville'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Animateur scientifique',
+                precision: 'Mondial des Cultures de Drummondville'
+              },
+              component: 'mond-card-component'
             },
             startDisplay: 'juillet 2009',
             endDisplay: '',
             showDuration: true,
             start: '2009-07',
             end: '2009-08',
-            component: 'mond-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/mc_pic.png'
           }
@@ -326,16 +348,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       }
@@ -355,17 +377,19 @@ export const PAGES_DATA = [
             secondaryColor: '#aeb3bd',
             lightSecondaryColor: '#aeb3bd',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Web concepteur',
-              precision: 'Cesi alternance'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Web concepteur',
+                precision: 'Cesi alternance'
+              },
+              component: 'cesi-card-component'
             },
             startDisplay: 'octobre 2016',
             endDisplay: 'janvier 2018',
             showDuration: false,
             start: '',
             end: '',
-            component: 'cesi-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/cesi_pic.png'
           }
@@ -374,16 +398,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -397,17 +421,19 @@ export const PAGES_DATA = [
             secondaryColor: '#ff7479',
             lightSecondaryColor: '#ff7479',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Développeur web fullstack',
-              precision: 'Le Wagon'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Développeur web fullstack',
+                precision: 'Le Wagon'
+              },
+              component: 'wagon-card-component'
             },
             startDisplay: 'juillet 2016',
             endDisplay: 'septembre 2016',
             showDuration: false,
             start: '',
             end: '',
-            component: 'wagon-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/wg_pic.png'
           }
@@ -416,16 +442,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -439,17 +465,19 @@ export const PAGES_DATA = [
             secondaryColor: '#31CDF2',
             lightSecondaryColor: '#FFB637',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Master Médiation en environnement',
-              precision: 'Université Aix-Marseille'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Master Médiation en environnement',
+                precision: 'Université Aix-Marseille'
+              },
+              component: 'medenv-card-component'
             },
             startDisplay: 'septembre 2010',
             endDisplay: 'septembre 2012',
             showDuration: false,
             start: '',
             end: '',
-            component: 'medenv-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/fsamu_pic.png'
           }
@@ -458,16 +486,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -481,17 +509,19 @@ export const PAGES_DATA = [
             secondaryColor: '#31CDF2',
             lightSecondaryColor: '#FFB637',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Licence biologie évolution evironnement',
-              precision: 'Université Aix-Marseille'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Licence biologie évolution evironnement',
+                precision: 'Université Aix-Marseille'
+              },
+              component: 'lbio-card-component'
             },
             startDisplay: 'septembre 2009',
             endDisplay: 'septembre 2010',
             showDuration: false,
             start: '',
             end: '',
-            component: 'lbio-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/amu_pic.png'
           }
@@ -500,16 +530,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -523,17 +553,19 @@ export const PAGES_DATA = [
             secondaryColor: '#3176B0',
             lightSecondaryColor: '#3176B0',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Formation de base astronomie & astrophysique',
-              precision: "Université d'Orléans - CNED"
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Formation de base astronomie & astrophysique',
+                precision: "Université d'Orléans - CNED"
+              },
+              component: 'astro-card-component'
             },
             startDisplay: 'septembre 2009',
             endDisplay: 'juin 2010',
             showDuration: false,
             start: '',
             end: '',
-            component: 'astro-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/uo_pic.png'
           }
@@ -542,16 +574,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -565,17 +597,19 @@ export const PAGES_DATA = [
             secondaryColor: '#c0b21b',
             lightSecondaryColor: '#c0b21b',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: "DUT Génie biologique, génie de l'environnement",
-              precision: 'IUT de la Roche-sur-Yon'
+            section: {
+              title: {
+                tag: 'h1',
+                main: "DUT Génie biologique, génie de l'environnement",
+                precision: 'IUT de la Roche-sur-Yon'
+              },
+              component: 'gb-card-component'
             },
             startDisplay: 'septembre 2007',
             endDisplay: 'septembre 2009',
             showDuration: false,
             start: '',
             end: '',
-            component: 'gb-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/un_pic.png'
           }
@@ -584,16 +618,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       }
@@ -613,12 +647,13 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Composition musicale'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Composition musicale'
+              },
+              component: 'compose-card-component'
             },
-            precision: '',
-            component: 'compose-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/music_pic.png'
           }
@@ -627,16 +662,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           },
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -650,13 +685,14 @@ export const PAGES_DATA = [
             secondaryColor: '#97BAB6',
             lightSecondaryColor: '#97BAB6',
             selectionName: 'LUX (Ez3kiel)',
-            title: {
-              tag: 'h1',
-              main: 'LUX',
-              precision: 'Ez3kiel'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'LUX',
+                precision: 'Ez3kiel'
+              },
+              component: 'lux-card-component'
             },
-            precision: '',
-            component: 'lux-card-component',
             bgPath: 'https://img.discogs.com/hLvgm7J6qvo8TUYMQvH274oXfbI=/600x353/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-140203-1415800442-4095.jpeg.jpg',
             iconPath: 'https://img.discogs.com/pU62yLqGpzDbKuyCb3HK90FeE8k=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6260212-1415012248-8601.jpeg.jpg'
           },
@@ -665,13 +701,14 @@ export const PAGES_DATA = [
             secondaryColor: '#703113',
             lightSecondaryColor: '#5577AA',
             selectionName: 'Kid A (Radiohead)',
-            title: {
-              tag: 'h1',
-              main: 'Kid A',
-              precision: 'Radiohead'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Kid A',
+                precision: 'Radiohead'
+              },
+              component: 'kida-card-component'
             },
-            precision: '',
-            component: 'kida-card-component',
             bgPath: 'https://img.discogs.com/omECGW3Dpn8yf8OT-_TXLsw-lq4=/600x400/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-3840-1462781416-2615.jpeg.jpg',
             iconPath: 'https://img.discogs.com/JTh2dRSnfa_dk2KYY5WCbR4ufy8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-86729-1146733406.jpeg.jpg'
           },
@@ -680,13 +717,14 @@ export const PAGES_DATA = [
             secondaryColor: '#3BB9D1',
             lightSecondaryColor: '#82C78B',
             selectionName: 'Some Say I So I Say Light (Ghostpoet)',
-            title: {
-              tag: 'h1',
-              main: 'Some Say I So I Say Light',
-              precision: 'Ghostpoet'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Some Say I So I Say Light',
+                precision: 'Ghostpoet'
+              },
+              component: 'some-card-component'
             },
-            precision: '',
-            component: 'some-card-component',
             bgPath: 'https://img.discogs.com/3wXdLvioHyMrRU7OyDo-ZoL1C5s=/600x450/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-1835598-1387715897-5247.jpeg.jpg',
             iconPath: 'https://img.discogs.com/Bu0VkUatXk0rvWEzJYDUXtF-Dfo=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5879034-1405233032-4477.jpeg.jpg'
           }
@@ -695,9 +733,9 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -711,13 +749,14 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: 'Flowers for Algernon',
-            title: {
-              tag: 'h1',
-              main: 'Flowers for Algernon',
-              precision: 'Daniel Keyes'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Flowers for Algernon',
+                precision: 'Daniel Keyes'
+              },
+              component: 'flowers-card-component'
             },
-            precision: '',
-            component: 'flowers-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/book_pic.png'
           },
@@ -726,13 +765,14 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: 'Le Passage',
-            title: {
-              tag: 'h1',
-              main: 'Le Passage',
-              precision: 'Justin Cronin'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Le Passage',
+                precision: 'Justin Cronin'
+              },
+              component: 'passage-card-component'
             },
-            precision: '',
-            component: 'passage-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/book_pic.png'
           }
@@ -741,9 +781,9 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -757,13 +797,14 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: 'Bladerunner 2049',
-            title: {
-              tag: 'h1',
-              main: 'Bladerunner 2049',
-              precision: 'Denis Villeneuve'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Bladerunner 2049',
+                precision: 'Denis Villeneuve'
+              },
+              component: 'blade-card-component'
             },
-            precision: '',
-            component: 'blade-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/ticket_pic.png'
           },
@@ -772,13 +813,14 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: 'Le Château dans le Ciel',
-            title: {
-              tag: 'h1',
-              main: 'Le Château dans le Ciel',
-              precision: 'Hayao Miyazaki'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Le Château dans le Ciel',
+                precision: 'Hayao Miyazaki'
+              },
+              component: 'castle-card-component'
             },
-            precision: '',
-            component: 'castle-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/ticket_pic.png'
           }
@@ -787,9 +829,9 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Titre'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       },
@@ -803,12 +845,13 @@ export const PAGES_DATA = [
             secondaryColor: '',
             lightSecondaryColor: '',
             selectionName: '',
-            title: {
-              tag: 'h1',
-              main: 'Faire du sport parfois'
+            section: {
+              title: {
+                tag: 'h1',
+                main: 'Faire du sport parfois'
+              },
+              component: 'sport-card-component'
             },
-            precision: '',
-            component: 'sport-card-component',
             bgPath: '',
             iconPath: 'static/thumbnails/sport_pic.png'
           }
@@ -817,9 +860,9 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              content: 'Faire des exercices'
+              main: 'Titre'
             },
-            insert: '<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit. Quaerat <strong>nostrum</strong> iste <em>soluta</em> id, unde assumenda non perspiciatis quia nihil? Quod eaque a tempore est? Fugiat, odio non? Soluta, mollitia distinctio.</p>'
+            component: ''
           }
         ]
       }

@@ -13,15 +13,6 @@
         />
       </transition>
     </div>
-    <div class="card-presentation-container">
-      <div class="card-presentation">
-        <transition
-          name="fade-text"
-        >
-          <card-selector-component v-if="showCard" />
-        </transition>
-      </div>
-    </div>
     <div class="thumbnail-container">
       <transition
         name="fade-img"
@@ -34,16 +25,33 @@
         >
       </transition>
     </div>
+    <div class="card-presentation-container">
+      <div class="card-presentation">
+        <transition
+          name="fade-text"
+        >
+          <section-selector-component
+            v-if="showCard"
+            :section-content="currentCard.section"
+            :start-display="currentCard.startDisplay"
+            :end-display="currentCard.endDisplay"
+            :show-duration="currentCard.showDuration"
+            :start="currentCard.start"
+            :end="currentCard.end"
+          />
+        </transition>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters } from 'vuex'
-import CardSelectorComponent from './CardSelectorComponent.vue'
+import SectionSelectorComponent from './SectionSelectorComponent.vue'
 
 export default {
   components: {
-    'card-selector-component': CardSelectorComponent
+    'section-selector-component': SectionSelectorComponent
   },
 
   computed: {
