@@ -14,9 +14,8 @@ export const HOME_DATA = {
           selectionName: '',
           title: {
             tag: 'h1',
-            content: 'Developpeur web'
+            main: 'Developpeur web'
           },
-          precision: '',
           component: 'profile-card-component',
           bgPath: 'https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif',
           iconPath: 'static/thumbnails/lr_pic.jpg'
@@ -59,7 +58,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Actiwine'
+              main: 'Developpeur Vue.js | django',
+              precision: 'Actiwine'
             },
             startDisplay: 'octobre 2016',
             endDisplay: "aujourd'hui",
@@ -100,7 +100,7 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Typetime'
+              main: 'Typetime'
             },
             startDisplay: 'projet perso',
             endDisplay: '',
@@ -141,7 +141,7 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Doors & Dragons'
+              main: 'Doors & Dragons'
             },
             startDisplay: 'projet perso',
             endDisplay: '',
@@ -182,7 +182,8 @@ export const PAGES_DATA = [
             selectionName: "Cool'eurs du Monde",
             title: {
               tag: 'h1',
-              content: "Cool'eurs du Monde"
+              main: 'Chargé de projet événementiel',
+              precision: "Cool'eurs du Monde"
             },
             startDisplay: 'août 2013',
             endDisplay: 'novembre 2013',
@@ -200,7 +201,8 @@ export const PAGES_DATA = [
             selectionName: 'RADSI',
             title: {
               tag: 'h1',
-              content: 'RADSI'
+              main: 'Chargé de projet événementiel',
+              precision: 'RADSI'
             },
             startDisplay: 'janvier 2013',
             endDisplay: 'juillet 2013',
@@ -218,7 +220,8 @@ export const PAGES_DATA = [
             selectionName: 'Projet SEM',
             title: {
               tag: 'h1',
-              content: 'Projet SEM'
+              main: 'Bénévolat en chantier international',
+              precision: 'Projet SEM'
             },
             startDisplay: 'mars 2013',
             endDisplay: 'octobre 2013',
@@ -259,7 +262,8 @@ export const PAGES_DATA = [
             selectionName: 'Planète Sciences',
             title: {
               tag: 'h1',
-              content: 'Planète Sciences'
+              main: 'Médiateur en environnement',
+              precision: 'Planète Sciences'
             },
             startDisplay: 'mars 2012',
             endDisplay: 'août 2012',
@@ -277,7 +281,8 @@ export const PAGES_DATA = [
             selectionName: 'Les Petits Débrouillards',
             title: {
               tag: 'h1',
-              content: 'Les Petits Débrouillards'
+              main: 'Animateur scientifique',
+              precision: 'Les Petits Débrouillards'
             },
             component: 'debs-card-component',
             bgPath: '',
@@ -290,7 +295,8 @@ export const PAGES_DATA = [
             selectionName: 'Les Robins des Villes',
             title: {
               tag: 'h1',
-              content: 'Les Robins des Villes'
+              main: 'Médiateur risque inondation',
+              precision: 'Les Robins des Villes'
             },
             component: 'robins-card-component',
             bgPath: '',
@@ -303,7 +309,8 @@ export const PAGES_DATA = [
             selectionName: 'Le Mondial des Cultures de Drummondville',
             title: {
               tag: 'h1',
-              content: 'Le Mondial des Cultures de Drummondville'
+              main: 'Animateur scientifique',
+              precision: 'Mondial des Cultures de Drummondville'
             },
             startDisplay: 'juillet 2009',
             endDisplay: '',
@@ -350,7 +357,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Web concepteur'
+              main: 'Web concepteur',
+              precision: 'Cesi alternance'
             },
             startDisplay: 'octobre 2016',
             endDisplay: 'janvier 2018',
@@ -391,7 +399,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Développeur web fullstack'
+              main: 'Développeur web fullstack',
+              precision: 'Le Wagon'
             },
             startDisplay: 'juillet 2016',
             endDisplay: 'septembre 2016',
@@ -432,7 +441,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Master Médiation en environnement'
+              main: 'Master Médiation en environnement',
+              precision: 'Université Aix-Marseille'
             },
             startDisplay: 'septembre 2010',
             endDisplay: 'septembre 2012',
@@ -473,7 +483,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Licence Biologie Évolution Evironnement'
+              main: 'Licence biologie évolution evironnement',
+              precision: 'Université Aix-Marseille'
             },
             startDisplay: 'septembre 2009',
             endDisplay: 'septembre 2010',
@@ -514,7 +525,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Astronomie & astrophysique'
+              main: 'Formation de base astronomie & astrophysique',
+              precision: "Université d'Orléans - CNED"
             },
             startDisplay: 'septembre 2009',
             endDisplay: 'juin 2010',
@@ -555,7 +567,8 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: "DUT génie biologique, génie de l'environnement"
+              main: "DUT Génie biologique, génie de l'environnement",
+              precision: 'IUT de la Roche-sur-Yon'
             },
             startDisplay: 'septembre 2007',
             endDisplay: 'septembre 2009',
@@ -602,7 +615,7 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Titre'
+              main: 'Composition musicale'
             },
             precision: '',
             component: 'compose-card-component',
@@ -639,7 +652,8 @@ export const PAGES_DATA = [
             selectionName: 'LUX (Ez3kiel)',
             title: {
               tag: 'h1',
-              content: 'LUX'
+              main: 'LUX',
+              precision: 'Ez3kiel'
             },
             precision: '',
             component: 'lux-card-component',
@@ -653,7 +667,8 @@ export const PAGES_DATA = [
             selectionName: 'Kid A (Radiohead)',
             title: {
               tag: 'h1',
-              content: 'Kid A'
+              main: 'Kid A',
+              precision: 'Radiohead'
             },
             precision: '',
             component: 'kida-card-component',
@@ -667,7 +682,8 @@ export const PAGES_DATA = [
             selectionName: 'Some Say I So I Say Light (Ghostpoet)',
             title: {
               tag: 'h1',
-              content: 'Some Say I So I Say Light'
+              main: 'Some Say I So I Say Light',
+              precision: 'Ghostpoet'
             },
             precision: '',
             component: 'some-card-component',
@@ -697,7 +713,8 @@ export const PAGES_DATA = [
             selectionName: 'Flowers for Algernon',
             title: {
               tag: 'h1',
-              content: 'Flowers for Algernon'
+              main: 'Flowers for Algernon',
+              precision: 'Daniel Keyes'
             },
             precision: '',
             component: 'flowers-card-component',
@@ -711,7 +728,8 @@ export const PAGES_DATA = [
             selectionName: 'Le Passage',
             title: {
               tag: 'h1',
-              content: 'Le Passage'
+              main: 'Le Passage',
+              precision: 'Justin Cronin'
             },
             precision: '',
             component: 'passage-card-component',
@@ -741,7 +759,8 @@ export const PAGES_DATA = [
             selectionName: 'Bladerunner 2049',
             title: {
               tag: 'h1',
-              content: 'Bladerunner 2049'
+              main: 'Bladerunner 2049',
+              precision: 'Denis Villeneuve'
             },
             precision: '',
             component: 'blade-card-component',
@@ -755,7 +774,8 @@ export const PAGES_DATA = [
             selectionName: 'Le Château dans le Ciel',
             title: {
               tag: 'h1',
-              content: 'Le Château dans le Ciel'
+              main: 'Le Château dans le Ciel',
+              precision: 'Hayao Miyazaki'
             },
             precision: '',
             component: 'castle-card-component',
@@ -785,7 +805,7 @@ export const PAGES_DATA = [
             selectionName: '',
             title: {
               tag: 'h1',
-              content: 'Faire du sport parfois'
+              main: 'Faire du sport parfois'
             },
             precision: '',
             component: 'sport-card-component',
