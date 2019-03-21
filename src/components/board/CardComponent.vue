@@ -99,6 +99,8 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        box-shadow: inset 0 0 100px rgba(0,0,0,0.6);
+        filter: blur(0.5px);
       }
     }
 

@@ -132,20 +132,5 @@ export default {
   .center-content {
     display: flex;
     justify-content: center;
-
-    .color-hover {
-
-      .inline-icon {
-        max-height: 0.8rem;
-        position: relative;
-        bottom: -2px;
-        transition: all $t-duration $t-timing-function;
-        filter: grayscale(1);
-      }
-
-      &:hover .inline-icon {
-        filter: grayscale(0);
-      }
-    }
   }
 </style>

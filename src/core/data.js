@@ -62,7 +62,8 @@ export const PAGES_DATA = [
               title: {
                 tag: 'h1',
                 main: 'Developpeur Vue.js | django',
-                precision: 'Actiwine'
+                precision: 'Actiwine',
+                link: 'https://www.actiwine.com/'
               },
               component: 'actiwine-card-component'
             },
@@ -71,7 +72,7 @@ export const PAGES_DATA = [
             showDuration: true,
             start: '2016-10',
             end: 'today',
-            bgPath: '',
+            bgPath: 'static/backgrounds/actiwine_bg.gif',
             iconPath: 'static/thumbnails/aw_pic.jpg'
           }
         ],
@@ -79,16 +80,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Environnement technique'
             },
-            component: ''
+            component: 'actiwine-board-environment-component'
           },
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Quelques réalisations'
             },
-            component: ''
+            component: 'actiwine-board-realisations-component'
           }
         ]
       },

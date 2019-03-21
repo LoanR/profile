@@ -1,25 +1,19 @@
 <template>
   <div>
     <p>
-      Lorem ipsum dolor sit,
       <strong>
-        amet
+        Actiwine
       </strong>
-      consectetur adipisicing elit. Quis eum non ipsum
-      <em>
-        laboriosam
-      </em>
-      sapiente dolorem culpa fuga ducimus, dolor labore ipsam hic error totam laudantium animi, ad, veritatis maxime assumenda.
+      est une place de marché BtoB pour le vin et se place en intermédiaire entre les
+      <em>viticulteurs</em> ou les
+      <em>négociants</em> et la
+      <em>grande distribution</em>, les
+      <em>CHR</em>...
+    </p>
+    <p>
+      Avec cette proposition, la
+      <strong>startup</strong>
+      a la volonté de réduire les intermédiaires, d'assurer des faibles coûts, une meilleure rémunération et de secouer les traditions.
     </p>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>

@@ -6,14 +6,24 @@
     >
       <title-component :title-tag="sectionContent.title.tag">
         <template slot="role">
-          {{ sectionContent.title.main }}
+          <a v-if="!sectionContent.title.precision && sectionContent.title.link" :href="sectionContent.title.link" target="_blank">
+            {{ sectionContent.title.main }}
+          </a>
+          <span v-else>
+            {{ sectionContent.title.main }}
+          </span>
         </template>
         <template
           v-if="sectionContent.title.precision"
           slot="structure"
         >
           <br>
-          {{ sectionContent.title.precision }}
+          <a v-if="sectionContent.title.link" :href="sectionContent.title.link" target="_blank">
+            {{ sectionContent.title.precision }}
+          </a>
+          <span v-else>
+            {{ sectionContent.title.precision }}
+          </span>
         </template>
       </title-component>
     </template>
@@ -66,6 +76,8 @@ import BladeCardComponent from '../specific_content/cards/hobbies/BladeCard.vue'
 import CastleCardComponent from '../specific_content/cards/hobbies/CastleCard.vue'
 import SportCardComponent from '../specific_content/cards/hobbies/SportCard.vue'
 import ProfileBoard1Component from '../specific_content/boards/ProfileBoard1.vue'
+import ActiwineBoardEnvironmentComponent from '../specific_content/boards/experiences/ActiwineBoardEnvironment.vue'
+import ActiwineBoardRealisationsComponent from '../specific_content/boards/experiences/ActiwineBoardRealisations.vue'
 
 export default {
   components: {
@@ -98,7 +110,9 @@ export default {
     'blade-card-component': BladeCardComponent,
     'castle-card-component': CastleCardComponent,
     'sport-card-component': SportCardComponent,
-    'profile-board-1-component': ProfileBoard1Component
+    'profile-board-1-component': ProfileBoard1Component,
+    'actiwine-board-environment-component': ActiwineBoardEnvironmentComponent,
+    'actiwine-board-realisations-component': ActiwineBoardRealisationsComponent
   },
 
   props: {
