@@ -146,7 +146,7 @@ export const PAGES_DATA = [
       },
       {
         subNavIconPath: 'static/thumbnails/dd_pic.png',
-        subNavTitle: 'Doors & Dragons',
+        subNavTitle: 'Caves & Lizards',
         cardSelectionTitle: '',
         cards: [
           {
@@ -157,7 +157,8 @@ export const PAGES_DATA = [
             section: {
               title: {
                 tag: 'h1',
-                main: 'Doors & Dragons'
+                main: 'Caves & Lizards',
+                link: 'https://github.com/LoanR/caves-and-lizards'
               },
               component: 'caves-card-component'
             },
@@ -166,7 +167,7 @@ export const PAGES_DATA = [
             showDuration: true,
             start: '',
             end: '',
-            bgPath: '',
+            bgPath: 'static/backgrounds/caves_bg.gif',
             iconPath: 'static/thumbnails/dd_pic.png'
           }
         ],
@@ -174,16 +175,16 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Ruby only'
             },
-            component: ''
+            component: 'caves-board-stack-component'
           },
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Work in progress'
             },
-            component: ''
+            component: 'caves-board-work-component'
           }
         ]
       },

@@ -89,6 +89,8 @@ import ActiwineBoardRealisationsComponent from '../specific_content/boards/exper
 import TypetimeBoardStackComponent from '../specific_content/boards/experiences/TypetimeBoardStack.vue'
 import TypetimeBoardOperationComponent from '../specific_content/boards/experiences/TypetimeBoardOperation.vue'
 import TypetimeBoardTodoComponent from '../specific_content/boards/experiences/TypetimeBoardTodo.vue'
+import CavesBoardStackComponent from '../specific_content/boards/experiences/CavesBoardStack.vue'
+import CavesBoardWorkComponent from '../specific_content/boards/experiences/CavesBoardWork.vue'
 
 export default {
   components: {
@@ -126,7 +128,9 @@ export default {
     'actiwine-board-realisations-component': ActiwineBoardRealisationsComponent,
     'typetime-board-stack-component': TypetimeBoardStackComponent,
     'typetime-board-operation-component': TypetimeBoardOperationComponent,
-    'typetime-board-todo-component': TypetimeBoardTodoComponent
+    'typetime-board-todo-component': TypetimeBoardTodoComponent,
+    'caves-board-stack-component': CavesBoardStackComponent,
+    'caves-board-work-component': CavesBoardWorkComponent
   },
 
   props: {

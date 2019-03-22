@@ -1,15 +1,10 @@
 <template>
   <div>
     <p>
-      Lorem ipsum dolor sit,
-      <strong>
-        amet
-      </strong>
-      consectetur adipisicing elit. Quis eum non ipsum
-      <em>
-        laboriosam
-      </em>
-      sapiente dolorem culpa fuga ducimus, dolor labore ipsam hic error totam laudantium animi, ad, veritatis maxime assumenda.
+      Jeu d'aventure textuel au tour par tour inspiré des règles de Donjons & Dragons.
+    </p>
+    <p>
+      Ouvrez des portes, explorez les lieux, affrontez des ennemis, faites des choix et perdez votre héro pour recommencer à nouveau.
     </p>
   </div>
 </template>
