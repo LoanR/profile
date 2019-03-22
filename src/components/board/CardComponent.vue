@@ -99,7 +99,7 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        box-shadow: inset 0 0 100px rgba(0,0,0,0.6);
+        box-shadow: inset 0 -15px 100px $dark-color;
         filter: blur(0.5px);
       }
     }
@@ -108,10 +108,9 @@ export default {
       width: 100%;
       height: 50%;
       display: inline-block;
-      padding-top: 30px;
 
       .card-presentation {
-        padding: 0 1rem;
+        padding: 30px 1rem 0 1rem;
       }
     }
 
@@ -124,7 +123,6 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       border: 6px solid $light-color;
-      overflow: hidden;
 
       .thumbnail {
         max-width: 80px;

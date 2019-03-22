@@ -6,7 +6,11 @@
     >
       <title-component :title-tag="sectionContent.title.tag">
         <template slot="role">
-          <a v-if="!sectionContent.title.precision && sectionContent.title.link" :href="sectionContent.title.link" target="_blank">
+          <a
+            v-if="!sectionContent.title.precision && sectionContent.title.link"
+            :href="sectionContent.title.link"
+            target="_blank"
+          >
             {{ sectionContent.title.main }}
           </a>
           <span v-else>
@@ -18,7 +22,11 @@
           slot="structure"
         >
           <br>
-          <a v-if="sectionContent.title.link" :href="sectionContent.title.link" target="_blank">
+          <a
+            v-if="sectionContent.title.link"
+            :href="sectionContent.title.link"
+            target="_blank"
+          >
             {{ sectionContent.title.precision }}
           </a>
           <span v-else>
@@ -78,6 +86,9 @@ import SportCardComponent from '../specific_content/cards/hobbies/SportCard.vue'
 import ProfileBoard1Component from '../specific_content/boards/ProfileBoard1.vue'
 import ActiwineBoardEnvironmentComponent from '../specific_content/boards/experiences/ActiwineBoardEnvironment.vue'
 import ActiwineBoardRealisationsComponent from '../specific_content/boards/experiences/ActiwineBoardRealisations.vue'
+import TypetimeBoardStackComponent from '../specific_content/boards/experiences/TypetimeBoardStack.vue'
+import TypetimeBoardOperationComponent from '../specific_content/boards/experiences/TypetimeBoardOperation.vue'
+import TypetimeBoardTodoComponent from '../specific_content/boards/experiences/TypetimeBoardTodo.vue'
 
 export default {
   components: {
@@ -112,7 +123,10 @@ export default {
     'sport-card-component': SportCardComponent,
     'profile-board-1-component': ProfileBoard1Component,
     'actiwine-board-environment-component': ActiwineBoardEnvironmentComponent,
-    'actiwine-board-realisations-component': ActiwineBoardRealisationsComponent
+    'actiwine-board-realisations-component': ActiwineBoardRealisationsComponent,
+    'typetime-board-stack-component': TypetimeBoardStackComponent,
+    'typetime-board-operation-component': TypetimeBoardOperationComponent,
+    'typetime-board-todo-component': TypetimeBoardTodoComponent
   },
 
   props: {

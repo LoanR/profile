@@ -1,15 +1,12 @@
 <template>
   <div>
     <p>
-      Lorem ipsum dolor sit,
-      <strong>
-        amet
-      </strong>
-      consectetur adipisicing elit. Quis eum non ipsum
-      <em>
-        laboriosam
-      </em>
-      sapiente dolorem culpa fuga ducimus, dolor labore ipsam hic error totam laudantium animi, ad, veritatis maxime assumenda.
+      Jeu de <strong>dactylographie</strong> :<br>
+      L'objectif est de taper au clavier le plus rapidement possible le mot affiché.<br>
+      Selon votre efficacité, votre <em>score</em> augmente. Si vous vous trompez, il diminue. Si le <em>timer</em> atteint 0, c'est perdu.<br>
+    </p>
+    <p>
+      Vous pouvez <em>paramétrer</em> votre partie en suggérant un thème, ou encore en ajustant la difficulté.
     </p>
   </div>
 </template>

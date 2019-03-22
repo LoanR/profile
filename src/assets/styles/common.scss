@@ -56,6 +56,14 @@ html {
       }
     }
 
+    ul.specific-padding-ul {
+      padding-left: 13px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
     p, h1 {
       a {
         cursor: pointer;
@@ -70,6 +78,5 @@ html {
         }
       }
     }
-
   }
 }

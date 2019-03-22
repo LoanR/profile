@@ -56,7 +56,7 @@ export const PAGES_DATA = [
           {
             primaryColor: '#7d2f59',
             secondaryColor: '#b4a123',
-            lightSecondaryColor: '#e4cf35',
+            lightSecondaryColor: '#e2d257',
             selectionName: '',
             section: {
               title: {
@@ -100,13 +100,14 @@ export const PAGES_DATA = [
         cards: [
           {
             primaryColor: '#f7b633',
-            secondaryColor: '#143894',
+            secondaryColor: '#1d45ac',
             lightSecondaryColor: '#6376ac',
             selectionName: '',
             section: {
               title: {
                 tag: 'h1',
-                main: 'Typetime'
+                main: 'Typetime',
+                link: 'https://loanr.github.io/typetime/'
               },
               component: 'typetime-card-component'
             },
@@ -115,7 +116,7 @@ export const PAGES_DATA = [
             showDuration: true,
             start: '',
             end: '',
-            bgPath: '',
+            bgPath: 'static/backgrounds/typetime_bg.gif',
             iconPath: 'static/thumbnails/tyti_pic.png'
           }
         ],
@@ -123,16 +124,23 @@ export const PAGES_DATA = [
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Choix techniques'
             },
-            component: ''
+            component: 'typetime-board-stack-component'
           },
           {
             title: {
               tag: 'h2',
-              main: 'Titre'
+              main: 'Fonctionnement'
             },
-            component: ''
+            component: 'typetime-board-operation-component'
+          },
+          {
+            title: {
+              tag: 'h2',
+              main: 'Todo'
+            },
+            component: 'typetime-board-todo-component'
           }
         ]
       },
