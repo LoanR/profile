@@ -91,6 +91,8 @@ import TypetimeBoardOperationComponent from '../specific_content/boards/experien
 import TypetimeBoardTodoComponent from '../specific_content/boards/experiences/TypetimeBoardTodo.vue'
 import CavesBoardStackComponent from '../specific_content/boards/experiences/CavesBoardStack.vue'
 import CavesBoardWorkComponent from '../specific_content/boards/experiences/CavesBoardWork.vue'
+import ComposeBoardSetlistComponent from '../specific_content/boards/hobbies/ComposeBoardSetlist.vue'
+import ListenBoardPlaylistsComponent from '../specific_content/boards/hobbies/ListenBoardPlaylists.vue'
 
 export default {
   components: {
@@ -130,7 +132,9 @@ export default {
     'typetime-board-operation-component': TypetimeBoardOperationComponent,
     'typetime-board-todo-component': TypetimeBoardTodoComponent,
     'caves-board-stack-component': CavesBoardStackComponent,
-    'caves-board-work-component': CavesBoardWorkComponent
+    'caves-board-work-component': CavesBoardWorkComponent,
+    'compose-board-setlist-component': ComposeBoardSetlistComponent,
+    'listen-board-playlists-component': ListenBoardPlaylistsComponent
   },
 
   props: {

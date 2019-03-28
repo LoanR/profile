@@ -1,12 +1,18 @@
 <template>
   <span>
-    <span v-if="index > 0">
+    <span
+      v-if="index > 0"
+      class="subtle"
+    >
       •
     </span>
     <a
       :class="{ 'active-mutation-link': isSelected }"
       @click="selectCard"
-    >{{ linkContent }}</a>
+    >{{ linkContent.title }}<span
+      v-if="linkContent.detail"
+      class="subtle"
+    > - {{ linkContent.detail }}</span></a>
   </span>
 </template>
 

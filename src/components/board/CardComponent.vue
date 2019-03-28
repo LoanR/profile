@@ -123,6 +123,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       border: 6px solid $light-color;
+      overflow: hidden;
 
       .thumbnail {
         max-width: 80px;

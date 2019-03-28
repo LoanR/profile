@@ -64,18 +64,20 @@ html {
       }
     }
 
-    p, h1 {
-      a {
-        cursor: pointer;
-        box-shadow: inset 0 -1px var(--secondary-color);
-        transition: all $t-duration $t-timing-function;
-        text-decoration: none;
-        color: inherit;
+    .subtle {
+      opacity: 0.2;
+    }
 
-        &:hover, &.active-mutation-link {
-          color: $light-color;
-          box-shadow: inset 0 -2rem var(--secondary-color);
-        }
+    p a, h1 a, .link-style {
+      cursor: pointer;
+      box-shadow: inset 0 -1px var(--secondary-color);
+      transition: all $t-duration $t-timing-function;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover, &.active-mutation-link {
+        color: $light-color;
+        box-shadow: inset 0 -2rem var(--secondary-color);
       }
     }
   }

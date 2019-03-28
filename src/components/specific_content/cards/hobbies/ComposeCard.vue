@@ -1,15 +1,11 @@
 <template>
   <div>
     <p>
-      Lorem ipsum dolor sit,
-      <strong>
-        amet
-      </strong>
-      consectetur adipisicing elit. Quis eum non ipsum
-      <em>
-        laboriosam
-      </em>
-      sapiente dolorem culpa fuga ducimus, dolor labore ipsam hic error totam laudantium animi, ad, veritatis maxime assumenda.
+      7 ans de musique, batterie, percussions.
+    </p>
+    <p>
+      Guitare, instruments à clavier<br>
+      Musique assistée par ordinateur, SuperCollider
     </p>
   </div>
 </template>

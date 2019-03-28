@@ -28,7 +28,9 @@ export default {
     ...mapState(['cardIndex']),
     ...mapGetters(['currentPagePart']),
     cardChoices () {
-      return this.currentPagePart.cards.map(card => card.selectionName)
+      return this.currentPagePart.cards.map(card => {
+        return { title: card.selectionName, detail: card.selectionDetail }
+      })
     },
     cardSelectionTitle () {
       return this.currentPagePart.cardSelectionTitle
